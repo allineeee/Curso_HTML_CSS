@@ -48,3 +48,5 @@
 - seletores (.,*, #)
 - box model, box-sizing: border-box;
 - display: block;
+- a tag style pode ficar em qualquer lugar no html??
+-```<link rel="stylesheet" href="style.css">```
