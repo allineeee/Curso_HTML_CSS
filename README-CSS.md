@@ -47,3 +47,4 @@
 ## Pesquisar mais
 - seletores (.,*, #)
 - box model, box-sizing: border-box;
+- display: block;
