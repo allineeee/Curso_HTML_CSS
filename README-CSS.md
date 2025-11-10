@@ -50,3 +50,4 @@
 - display: block;
 - a tag style pode ficar em qualquer lugar no html??
 -```<link rel="stylesheet" href="style.css">```
+- seleção de descendente
