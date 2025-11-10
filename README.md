@@ -40,7 +40,7 @@
         texto texto texto
     </h1>
 ```
-- html semantico: por exemplo usar as tags '<h>' ajuda quando um leitor para deficientes visuais usar o site
+- html semantico: por exemplo usar as tags ```<h>``` ajuda quando um leitor para deficientes visuais usar o site
 - existem tags que são blocos. E existem tags que não podem ir dentro de outras
 - toda tag html pode receber um atributo style, que recebe um css dentro
 - tag ```<b>``` e tag ```<strong>``` deixam um texto em negrito. Porém, a tag ```<strong>``` é uma tag semântica, ela deixa a palavra "mais forte" para o leitor.
