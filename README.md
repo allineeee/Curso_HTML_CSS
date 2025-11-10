@@ -57,5 +57,6 @@
 - elemetos que tem semantica???section??
 - padding: Top Direita Bottom Esquerda (sentido horário)
 - li x ul x ol(ver types e start) x dl
+- tabelas tr x th, colspan, rowspan
 
 
