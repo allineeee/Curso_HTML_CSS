@@ -59,6 +59,8 @@
 - li x ul x ol(ver types e start) x dl
 - tabelas tr x th, colspan, rowspan
 - é proibido aninhar um form dentro de outro form??
-
-
+- label são clicáveis?
+- accept="image/*"???
+- tipos da tag input
+- cols e rows no textares, cols são a quantidade de caracteres????
 
