@@ -58,5 +58,7 @@
 - padding: Top Direita Bottom Esquerda (sentido horário)
 - li x ul x ol(ver types e start) x dl
 - tabelas tr x th, colspan, rowspan
+- é proibido aninhar um form dentro de outro form??
+
 
 
