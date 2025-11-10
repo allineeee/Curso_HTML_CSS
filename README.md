@@ -2,11 +2,7 @@
 
 - tags são case insensitives
 - existem tags com e sem corpo
-- nas tags sem corpo, pode ou não ter uma barra no final:
-```html
-<meta>
-<meta/>
-```
+- nas tags sem corpo, pode ou não ter uma barra no final: ```<meta>``` ou ```<meta/>```
 - tag <head> define metadados sobre o html
 - comentário em HTML:
 ```html
@@ -16,17 +12,14 @@
 ```html
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width">
     <title>Meu html</title>
+    <!-- CSS também pode ir aqui. Usando arquivo ou a tag style -->
 </head>
-
 <body>
-
 </body>
-
 </html>
 ```
 - estilo de tag inline -> ```<span></span>```
