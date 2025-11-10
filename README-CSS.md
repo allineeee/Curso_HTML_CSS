@@ -22,4 +22,4 @@
 
 
 ## Pesquisar mais
-- seletores
+- seletores (.,*, #)
