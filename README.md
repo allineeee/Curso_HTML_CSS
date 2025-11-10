@@ -54,6 +54,7 @@
 - tags que não pode, vir dentro da tag p. porque não são tags inline: blockquote...
 - containers: span x div
 - tags nav, section, article, aside
-- elemetos que tem semantica???
+- elemetos que tem semantica???section??
+- padding: Top Direita Bottom Esquerda (sentido horário)
 
 
