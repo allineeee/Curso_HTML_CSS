@@ -45,9 +45,93 @@
 ```
 
 ## Pesquisar mais
-- seletores (.,*, #)
+- seletores (.,*, #)???
+- quais são os seletores do css???
 - box model, box-sizing: border-box;
 - display: block;
 - a tag style pode ficar em qualquer lugar no html??
 -```<link rel="stylesheet" href="style.css">```
 - seleção de descendente
+- elementos com duas classes "pai filha"
+```html
+    <!-- nesse caso, a div filha herda as 
+     configurações da div pai -->
+    <div class="pai">
+        Pai
+        <div class="filha">
+            Filha
+        </div>
+    </div>
+```
+
+```css
+div {
+    color: initial;
+    margin-left: 20px;
+}
+
+.pai > .filha{
+    color: blue;
+}
+```
+```html
+    <div class="pai">
+        Pai
+        <div class="filha outra qualquer">
+            Filha 1
+            <div class="filha outra qualquer">
+                Filha da filha
+            </div>
+        </div>
+        <div class="filha outra qualquer">
+            Filha 2
+            <div class="filha outra qualquer">
+                Filha da filha 2
+            </div>
+        </div>
+    </div>
+```
+- seletore de atributo etc:
+```css
+.pai h1+p{
+    color: red;
+}
+
+.pai p+h1{
+    color: yellow;
+}
+
+.pai h1~p{
+    color: yellow;
+}
+
+[meu-atributo]{
+    color: blue;
+}
+
+[meu-atributo="valor"]{
+    color: blue;
+}
+
+[meu-atributo~="valor"]{
+    color: blue;
+}
+
+[meu-atributo|="valor"]{
+    color: blue;
+}
+
+[meu-atributo^="valor"]{
+    color: blue;
+}
+
+[meu-atributo$="valor"]{
+    color: blue;
+}
+
+[meu-atributo*="valor"]{
+    color: blue;
+}
+
+
+```

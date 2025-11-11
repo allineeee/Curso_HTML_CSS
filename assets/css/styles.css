@@ -3,7 +3,24 @@
     padding: 0;
 }
 
-.color-red {
+.pai h1+p{
+    color: red;
+}
+
+.pai p+h1{
+    color: yellow;
+}
+
+[meu-atributo="valor1"]{
+    color: blue;
+}
+
+
+[meu-atributo~="valor1"]{
+    color: deeppink;
+}
+
+/* .color-red {
     color: red;
 }
 
@@ -14,6 +31,19 @@
 .main-content .heading {
     color: purple;
 }
+
+div {
+    color: initial;
+    margin-left: 20px;
+}
+
+.pai > .filha{
+    color: blue;
+}
+
+.pai > .filha > .filha{
+    color: red;
+} */
 
 /* p,
 h1 {
