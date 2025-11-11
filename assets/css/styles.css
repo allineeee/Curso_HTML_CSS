@@ -1,10 +1,43 @@
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+
 }
 
-.grid {
+.pai {
+    width: 50rem;
+    height: 100vh;
+    background: yellow;
+    overflow: hidden;
+}
+
+.pai > div{
+    width: 50%;
+    height: 50rem;
+    background-color: blue;
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+.color-one {
+    background-color: turquoise;
+}
+
+.color-two {
+    background-color: violet;
+}
+
+
+
+
+/* .grid {
     padding: 15px;
 
 }
@@ -26,7 +59,7 @@
     width: 100%;
     height: 100%;
     background-color: #abc123;
-}
+} */
 
 /* p{
     text-align: justify;

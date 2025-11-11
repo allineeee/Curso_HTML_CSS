@@ -203,4 +203,6 @@ p::selection{
 - pq o vermelho é #ff0000 e não #990000
 - rgb e rgba
 - hsl e hsla
-- unidades de medida: 
+- unidades de medida: unidades absolutas, unidades relativas, em (elemento pai multiplicação), rem (elemento root), vw, vh
+- https://www.w3schools.com/cssref/css_units.php
+- links de ancoras
