@@ -199,4 +199,8 @@ p::selection{
 - propriedade  (inline, block, flex, grid), clear: both
 - propriedade float???
 - box-sizing: border-box;
-
+- cores no css: hexadecimal vernelho(FF) verde(FF) azul(FF), #abc123; - ABCDEF123456789
+- pq o vermelho é #ff0000 e não #990000
+- rgb e rgba
+- hsl e hsla
+- unidades de medida: 
