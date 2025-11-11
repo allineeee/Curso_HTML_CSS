@@ -226,3 +226,5 @@ p{
 ```
 
 - position: absolute, fixed, sticky..., z-index
+- media queries com exemplos
+- https://developer.mozilla.org/pt-BR/docs/Web/CSS/Guides/Media_queries/Using
