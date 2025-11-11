@@ -206,3 +206,23 @@ p::selection{
 - unidades de medida: unidades absolutas, unidades relativas, em (elemento pai multiplicação), rem (elemento root), vw, vh
 - https://www.w3schools.com/cssref/css_units.php
 - links de ancoras
+- propriedades pra trabalhar com textos:
+```css
+p{
+    /* color: red;
+    background-color: yellow;
+    font-style: italic;
+    font-weight: bold;
+    direction: rtl;
+    letter-spacing: 1px;
+    text-decoration: overline;
+    word-spacing: 5px;
+    text-indent: 50px;
+    text-shadow: 2px 2px red;
+    line-height: 30px; */
+    text-align: left;
+    font-size: 20px;  
+}
+```
+
+- position: absolute, fixed, sticky..., z-index

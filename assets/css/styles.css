@@ -1,13 +1,64 @@
-html {
+* {
+    margin: 0;
+    /* padding: 0; */
+}
+
+ul{
+    height: 100px;
+    overflow-y: auto;
+}
+
+ul li.sticky{
+    position: sticky;
+    background-color: gray;
+    top: 0;
+}
+
+/* .pai {}
+
+.filha1,
+.filha2 {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    margin: 10px;
+    position: static;
+}
+
+.filha2 {
+    background-color: greenyellow;
+}
+
+.filha1 {
+    position: absolute;
+    top: 0px;
+} */
+
+
+/* p{
+    color: red;
+    background-color: yellow;
+    font-style: italic;
+    font-weight: bold;
+    direction: rtl;
+    letter-spacing: 1px;
+    text-decoration: overline;
+    word-spacing: 5px;
+    text-indent: 50px;
+    text-shadow: 2px 2px red;
+    line-height: 30px; 
+    text-align: left;
+    font-size: 20px;  
+} */
+
+
+
+/* html {
     font-size: 62.5%;
     scroll-behavior: smooth;
 }
 
-* {
-    margin: 0;
-    padding: 0;
 
-}
 
 .pai {
     width: 50rem;
@@ -34,7 +85,7 @@ p {
     background-color: violet;
 }
 
-
+ */
 
 
 /* .grid {
