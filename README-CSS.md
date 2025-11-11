@@ -196,6 +196,7 @@ p::selection{
 - https://specificity.keegan.st/
 - herança no css
 - unidade de medidas no css: %, auto, max, min, em
-- propriedade display
-
+- propriedade  (inline, block, flex, grid), clear: both
+- propriedade float???
+- box-sizing: border-box;
 
