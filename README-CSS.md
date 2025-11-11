@@ -135,3 +135,67 @@ div {
 
 
 ```
+
+- seletores de pseudoclasses: hover...
+- links que foram visitados e links que não foram visitados (a:link, a:visited)
+- li:last-child, input:checked +p,
+- seletor not:
+```css
+input:checked + p{
+    color: red;
+}
+
+input:not(:checked) + p{
+    background: yellowgreen;
+}
+
+p:not(.meio){
+    color: blue;
+}
+```
+
+```css
+ul li:nth-child(odd) {
+    background-color: rebeccapurple;
+}
+
+ul li:nth-child(even) {
+    background-color: darkturquoise;
+}
+
+ul li:nth-child(3n) {
+    background-color: deeppink;
+}
+
+ul li:nth-child(3n + 5) {
+    background-color: yellow;
+}
+```
+- pseudo elemento:
+```css
+ul li::after{
+    content: " - ";
+}
+
+p::first-letter{
+    font-size: 150px;
+    display: block;
+    float: left;
+    margin: 0 20px 20px 0;
+    color: red;
+}
+
+p::selection{
+    background-color: black;
+    color: #fff;
+}
+
+```
+
+- especificidade no css (como faz a conta 1, 1, 0) e !important
+- https://specificity.keegan.st/
+- herança no css
+- unidade de medidas no css: %, auto, max, min, em
+- propriedade display
+
+

@@ -1,9 +1,85 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
+} */
+
+/* p{
+    text-align: justify;
+    font-size: 18px;
 }
 
-.pai h1+p{
+p::first-letter{
+    font-size: 150px;
+    display: block;
+    float: left;
+    margin: 0 20px 20px 0;
+    color: red;
+}
+
+p::selection{
+    background-color: black;
+    color: #fff;
+} */
+
+
+/* li{
+    padding: 8px;
+    margin: 10px 0px;
+}
+
+ul li::after{
+    content: " - ";
+} */
+
+/* ul li:nth-child(odd) {
+    background-color: rebeccapurple;
+}
+
+ul li:nth-child(even) {
+    background-color: darkturquoise;
+}
+
+ul li:nth-child(3n) {
+    background-color: deeppink;
+}
+
+ul li:nth-child(3n + 5) {
+    background-color: yellow;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+/* input:checked + p{
+    color: red;
+}
+
+input:not(:checked) + p{
+    background: yellowgreen;
+}
+
+p:not(.meio){
+    color: blue;
+} */
+
+
+/* .heading{
+    transition: all 300ms ease-in-out;
+}
+
+.heading:hover{
+background: red;
+} */
+
+/* .pai h1+p{
     color: red;
 }
 
@@ -18,7 +94,7 @@
 
 [meu-atributo~="valor1"]{
     color: deeppink;
-}
+} */
 
 /* .color-red {
     color: red;
