@@ -196,6 +196,7 @@ p::selection{
 - https://specificity.keegan.st/
 - herança no css
 - unidade de medidas no css: %, auto, max, min, em
+- max-widht, min-width, height, view port
 - propriedade  (inline, block, flex, grid), clear: both
 - propriedade float???
 - box-sizing: border-box;
@@ -235,3 +236,4 @@ p{
 - https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 - https://youtu.be/uHiSYokteNY?si=kGm4lEusCUBTHuff
 - https://youtu.be/odYCJU6NHss?si=jl4YplC_dlWtTzuR
+- criar variaveis no css - :root{--primary-color: #0a1128;}

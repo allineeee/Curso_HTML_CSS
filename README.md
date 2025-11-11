@@ -1,1 +1,1 @@
-teste
+background-image: url('../img/main-bg.svg');
