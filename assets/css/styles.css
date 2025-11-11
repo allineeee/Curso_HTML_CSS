@@ -4,7 +4,18 @@
     box-sizing: border-box;
 }
 
-body{
+.flex-container{
+    display: flex;
+    align-items: center;
+    background-color: yellow;
+    height: 300px;
+}
+
+.flex-item{
+    background-color: red;
+}
+
+/*body{
     font-family: sans-serif;
 }
 
@@ -90,7 +101,7 @@ body{
     .grid .col {
         width: 100%;
     }
-}
+} */
 
 /* ul{
     height: 100px;

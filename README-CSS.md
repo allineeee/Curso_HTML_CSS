@@ -228,3 +228,10 @@ p{
 - position: absolute, fixed, sticky..., z-index
 - media queries com exemplos
 - https://developer.mozilla.org/pt-BR/docs/Web/CSS/Guides/Media_queries/Using
+- flexbox (eixo principal, eixo perpendicular, align content, align items, justify content, cross start, cross axis, cross end, flex flow, flex grow)
+- rever aulas:
+- 08:12:25 - Entenda o Flexbox
+- 08:55:46 - Entenda CSS Grid
+- https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+- https://youtu.be/uHiSYokteNY?si=kGm4lEusCUBTHuff
+- https://youtu.be/odYCJU6NHss?si=jl4YplC_dlWtTzuR
