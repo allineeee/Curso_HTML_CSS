@@ -4,7 +4,7 @@
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     gap: var(--gap);
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .intro-text-content,
@@ -22,7 +22,9 @@
 .top3-content {
     max-width: 64rem;
     display: flex;
-    flex-flow: column wrap;
+    /* flex-flow: column wrap; */
+    flex-direction: column;
+    flex-wrap: nowrap;
     justify-content: center;
     height: 100vh;
     text-align: center;
@@ -32,7 +34,7 @@
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .grid-description{
@@ -66,4 +68,23 @@
     top: -4rem;
     left: -2rem;
     transform: rotate(5deg);
+}
+
+.gallery-img{
+    width: 100%;
+    max-width: 36rem;
+    max-height: 36rem;
+    overflow: hidden;    
+}
+
+.gallery-img img{
+       transition: all 300ms ease-in-out;
+       width: 100%;
+  height: 100%;
+  object-fit: cover; /* Corta a imagem para preencher o container sem distorcer */
+  object-position: center;
+}
+
+.gallery-img img:hover{
+    transform: translate(-3%, 3%);
 }
