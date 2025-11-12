@@ -237,3 +237,4 @@ p{
 - https://youtu.be/uHiSYokteNY?si=kGm4lEusCUBTHuff
 - https://youtu.be/odYCJU6NHss?si=jl4YplC_dlWtTzuR
 - criar variaveis no css - :root{--primary-color: #0a1128;}
+- inherit é herança????
