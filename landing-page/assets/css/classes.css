@@ -13,7 +13,7 @@
 .main-content {
     max-width: 120rem;
     margin: 0 auto;
-    padding: 10rem var(--gap);
+    padding: 6rem var(--gap) 10rem;
 }
 
 /* não é a tag section, é o nome de uma classe */
