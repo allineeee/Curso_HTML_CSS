@@ -230,6 +230,7 @@ p{
 - media queries com exemplos
 - https://developer.mozilla.org/pt-BR/docs/Web/CSS/Guides/Media_queries/Using
 - flexbox (eixo principal, eixo perpendicular, align content, align items, justify content, cross start, cross axis, cross end, flex flow, flex grow)
+- display: grid???
 - rever aulas:
 - 08:12:25 - Entenda o Flexbox
 - 08:55:46 - Entenda CSS Grid
@@ -238,3 +239,4 @@ p{
 - https://youtu.be/odYCJU6NHss?si=jl4YplC_dlWtTzuR
 - criar variaveis no css - :root{--primary-color: #0a1128;}
 - inherit é herança????
+- criar contador no css???
