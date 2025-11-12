@@ -14,7 +14,6 @@
     justify-content: center;
 }
 
-
 .intro-img img {
     max-width: 100%;
     height: auto;
@@ -43,6 +42,7 @@
 }
 
 .grid-main-heading {
+    /* eu adicionei margin top */
     margin-top: 5rem;
     margin-bottom: 1rem;
 }
@@ -88,4 +88,12 @@
 
 .gallery-img img:hover {
     transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
+}
+
+.contact-form {
+    grid-column: span 2;
+}
+
+.contact-form fieldset{
+    border: none;
 }
