@@ -240,3 +240,4 @@ p{
 - criar variaveis no css - :root{--primary-color: #0a1128;}
 - inherit é herança????
 - criar contador no css???
+- pq tem content: ''; no pseudo???
