@@ -1,9 +1,9 @@
 ## Curso HTML5
 
 - tags são case insensitives
-- existem tags com e sem corpo
+- existem tags com e sem corpo (tags com corpo suportam outras tags dentro delas)
 - nas tags sem corpo, pode ou não ter uma barra no final: ```<meta>``` ou ```<meta/>```
-- tag <head> define metadados sobre o html
+- tag ```<head>``` define metadados sobre o html
 - comentário em HTML:
 ```html
 <!-- Exemplo de comentário -->
@@ -24,9 +24,9 @@
 ```
 - estilo de tag inline -> ```<span></span>```
 - id são únicos, não pode ter mais de um id iguais na página
-- class também são identificadores, mas diferente do id, elas podem se repetir
+- class também são identificadores, mas diferente do id, elas podem se repetir, e é possivel ter mais de uma classe dentro de uma tag
 ```html
-    <h1 id="cabecalho-um" class="fundo-vermelho">
+    <h1 id="cabecalho-um" class="fundo-vermelho outra-classe">
         texto texto
     </h1>
     <h1 id="cabecalho-dois" class="fundo-vermelho">
