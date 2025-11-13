@@ -31,12 +31,24 @@
 | Irmão adjacente | `h1 + p`  | Seleciona `<p>` **logo após** um `<h1>`     |
 | Irmãos gerais   | `h1 ~ p`  | Seleciona **todos** os `<p>` após `<h1>`    |
 
----
+### Seletores de atributo
+
+| Sintaxe           | Significado                                 | Exemplo                            |        |         |
+| ----------------- | ------------------------------------------- | ---------------------------------- | ------ | ------- |
+| `[attr]`          | Tem o atributo                              | `[disabled]`                       |        |         |
+| `[attr="valor"]`  | Atributo igual a valor                      | `[type="text"]`                    |        |         |
+| `[attr~="valor"]` | Contém “valor” na lista separada por espaço | `[class~="ativo"]`                 |        |         |
+| `[attr            | ="valor"]`                                  | Valor igual ou inicia com “valor-” | `[lang | ="en"]` |
+| `[attr^="valor"]` | Valor começa com “valor”                    | `[src^="img/"]`                    |        |         |
+| `[attr$="valor"]` | Valor termina com “valor”                   | `[src$=".png"]`                    |        |         |
+| `[attr*="valor"]` | Valor contém “valor”                        | `[title*="promo"]`                 |        |         |
+
+
 
 ### AAAAAAA
 
 
-- o '#' é usado pra ids e o '.' para classes
+
 - no caso abaixo, a margin bottom do primeiro elemento, não é somada com a margi-top do segundo elemento, é usado a maior margin. Como nesse caso ambas as margins tem o mesmo tamanho, fica uma diferença de 20px entre os dois elementos
 ```css
   .section-one {
@@ -63,7 +75,7 @@
 ```
 
 ## Pesquisar mais
-- seletores (.,*, #)???
+
 - quais são os seletores do css???
 - box model, box-sizing: border-box;
 - display: block;
@@ -277,17 +289,6 @@ p{
 
 
 
-### Seletores de atributo
-
-| Sintaxe           | Significado                                 | Exemplo                            |        |         |
-| ----------------- | ------------------------------------------- | ---------------------------------- | ------ | ------- |
-| `[attr]`          | Tem o atributo                              | `[disabled]`                       |        |         |
-| `[attr="valor"]`  | Atributo igual a valor                      | `[type="text"]`                    |        |         |
-| `[attr~="valor"]` | Contém “valor” na lista separada por espaço | `[class~="ativo"]`                 |        |         |
-| `[attr            | ="valor"]`                                  | Valor igual ou inicia com “valor-” | `[lang | ="en"]` |
-| `[attr^="valor"]` | Valor começa com “valor”                    | `[src^="img/"]`                    |        |         |
-| `[attr$="valor"]` | Valor termina com “valor”                   | `[src$=".png"]`                    |        |         |
-| `[attr*="valor"]` | Valor contém “valor”                        | `[title*="promo"]`                 |        |         |
 
 ---
 
