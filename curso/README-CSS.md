@@ -161,7 +161,7 @@ p::selection {
 
 ### Box Model
 
-O **box model** define como o espaço do elemento é calculado:
+- O box model define como o espaço do elemento é calculado:
 
 ```
 +----------------------+
@@ -174,6 +174,106 @@ O **box model** define como o espaço do elemento é calculado:
 |  +----------------+  |
 +----------------------+
 ```
+
+- `padding`: espaçamento interno (dentro da borda). Não pode ser negativo.
+- `margin`: espaçamento externo. Pode ser negativo.
+- `box-sizing`: como o tamanho total é calculado. O `border-box` inclui padding e borda no cálculo de largura/altura (`box-sizing: border-box`).
+- Ordem dos valores: Top → Right → Bottom → Left (sentido horário)
+- Valores do padding/margin:
+    - 1 valor -> aplica em todos os lados
+    - 2 valores -> (top/bottom) (left/right)
+    - 3 valores -> (top) (left/right) (bottom)
+    - 4 valores -> (top) (right) (bottom) (left)
+
+```css
+padding: 10px;
+padding: 10px 20px;
+padding: 10px 20px 30px;
+padding: 10px 20px 5px 30px;
+```
+
+### Atributo display
+
+| Valor          | Descrição                                  |
+| -------------- | ------------------------------------------ |
+| `block`        | Ocupa toda a linha (`div`, `section`)      |
+| `inline`       | Ocupa apenas o conteúdo (`span`, `a`)      |
+| `inline-block` | Inline, mas permite definir `width/height` |
+| `none`         | Esconde o elemento                         |
+| `flex`         | Usa layout Flexbox                         |
+| `grid`         | Usa layout CSS Grid                        |
+
+
+
+### Unidades de medida
+
+| Tipo          | Exemplo                                              | Descrição                            |
+| ------------- | ---------------------------------------------------- | ------------------------------------ |
+| **Absolutas** | `px`, `cm`, `mm`, `pt`                               | Fixas, não se ajustam à tela         |
+| **Relativas** | `%`, `em`, `rem`, `vw`, `vh`                         | Dependem do elemento pai ou viewport |
+| `em`          | Relativo ao tamanho da **fonte do elemento pai**     |                                      |
+| `rem`         | Relativo à fonte do **elemento raiz (html)**         |                                      |
+| `vw` / `vh`   | Relativo à largura/altura da **viewport** (1vw = 1%) |                                      |
+
+
+
+### Cores
+
+| Tipo            | Exemplo                     | Explicação                       |
+| --------------- | --------------------------- | -------------------------------- |
+| **Hexadecimal** | `#ff0000`                   | Vermelho puro (R=FF, G=00, B=00) |
+| **RGB**         | `rgb(255, 0, 0)`            | Vermelho                         |
+| **RGBA**        | `rgba(255, 0, 0, 0.5)`      | Vermelho com transparência       |
+| **HSL**         | `hsl(0, 100%, 50%)`         | Matiz, saturação, luminosidade   |
+| **HSLA**        | `hsla(120, 100%, 50%, 0.5)` | Com transparência                |
+
+
+### Propriedades de texto
+
+```css
+p {
+  color: red;
+  background-color: yellow;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: underline;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  word-spacing: 5px;
+  text-indent: 40px;
+  text-shadow: 2px 2px 5px gray;
+}
+```
+
+### Tamanho e responsividade
+
+| Propriedade              | Função                                                          |
+| ------------------------ | --------------------------------------------------------------- |
+| `width`, `height`        | Largura e altura                                                |
+| `max-width`, `min-width` | Limites máximos e mínimos                                       |
+| `auto`                   | Calculado automaticamente                                       |
+| `overflow`               | Controla conteúdo que “transborda” (`hidden`, `scroll`, `auto`) |
+
+ 
+
+### Position e Z-index
+
+| Valor      | Descrição                                                |
+| ---------- | -------------------------------------------------------- |
+| `static`   | Padrão (fluxo normal)                                    |
+| `relative` | Move em relação à posição original                       |
+| `absolute` | Posiciona relativo ao **primeiro ancestral posicionado** |
+| `fixed`    | Fixa na tela (mesmo com scroll)                          |
+| `sticky`   | Fixa quando chega ao topo da tela                        |
+| `z-index`  | Define a **ordem de sobreposição** (maior = na frente)   |
+
+
+
+
+
 
 
 ### AAAAAAA
@@ -257,8 +357,7 @@ O **box model** define como o espaço do elemento é calculado:
 - unidade de medidas no css: %, auto, max, min, em
 - max-widht, min-width, height, view port
 - propriedade  (inline, block, flex, grid), clear: both
-- propriedade float???
-- box-sizing: border-box;
+
 - cores no css: hexadecimal vernelho(FF) verde(FF) azul(FF), #abc123; - ABCDEF123456789
 - pq o vermelho é #ff0000 e não #990000
 - rgb e rgba
@@ -289,7 +388,7 @@ p{
 - media queries com exemplos
 - https://developer.mozilla.org/pt-BR/docs/Web/CSS/Guides/Media_queries/Using
 - flexbox (eixo principal, eixo perpendicular, align content, align items, justify content, cross start, cross axis, cross end, flex flow, flex grow)
-- display: grid???
+
 
 - https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 - https://youtu.be/uHiSYokteNY?si=kGm4lEusCUBTHuff
@@ -299,170 +398,11 @@ p{
 - criar contador no css???
 
 
-- 
-##  Box Model e espaçamento
-
-* `padding`: espaçamento **interno** (dentro da borda)
-* `margin`: espaçamento **externo**
-* Ordem dos valores: **Top → Right → Bottom → Left** (sentido horário)
-
-- padding: Top Direita Bottom Esquerda (sentido horário). possibilidades de valores para o padding?
 
 
 
 
 
-
-
-
-
-
-##  Box Model
-
-O **box model** define como o espaço do elemento é calculado:
-
-```
-+----------------------+
-|      margin          |  ← externo
-|  +----------------+  |
-|  |    border      |  |
-|  | +------------+ |  |
-|  | |  padding   | |  | ← interno
-|  | +------------+ |  |
-|  +----------------+  |
-+----------------------+
-```
-
-| Propriedade  | O que faz                        | Observações                                                      |
-| ------------ | -------------------------------- | ---------------------------------------------------------------- |
-| `margin`     | Espaço **externo**               | Pode ser negativo                                                |
-| `padding`    | Espaço **interno**               | Não pode ser negativo                                            |
-| `border`     | Borda em volta do conteúdo       |                                                                  |
-| `box-sizing` | Como o tamanho total é calculado | `border-box` inclui padding e borda no cálculo de largura/altura |
-
-### Valores do padding/margin
-
-* 1 valor → aplica em todos os lados
-* 2 valores → (top/bottom) (left/right)
-* 3 valores → (top) (left/right) (bottom)
-* 4 valores → (top) (right) (bottom) (left)
-
-Exemplo:
-
-```css
-padding: 10px 20px 5px 0;
-```
-
----
-
-## 🧩 Display e fluxo
-
-| Valor          | Descrição                                  |
-| -------------- | ------------------------------------------ |
-| `block`        | Ocupa toda a linha (`div`, `section`)      |
-| `inline`       | Ocupa apenas o conteúdo (`span`, `a`)      |
-| `inline-block` | Inline, mas permite definir `width/height` |
-| `none`         | Esconde o elemento                         |
-| `flex`         | Usa layout Flexbox                         |
-| `grid`         | Usa layout CSS Grid                        |
-
----
-
-## 📦 Float e Clear
-
-| Propriedade | Descrição                                                               |
-| ----------- | ----------------------------------------------------------------------- |
-| `float`     | Faz o elemento "flutuar" à direita ou esquerda, com o texto contornando |
-| `clear`     | Define de que lado **não pode haver elementos flutuantes**              |
-
-Exemplo:
-
-```css
-img {
-  float: left;
-  margin: 10px;
-}
-p {
-  clear: both;
-}
-```
-
----
-
-## 📏 Unidades de medida
-
-| Tipo          | Exemplo                                              | Descrição                            |
-| ------------- | ---------------------------------------------------- | ------------------------------------ |
-| **Absolutas** | `px`, `cm`, `mm`, `pt`                               | Fixas, não se ajustam à tela         |
-| **Relativas** | `%`, `em`, `rem`, `vw`, `vh`                         | Dependem do elemento pai ou viewport |
-| `em`          | Relativo ao tamanho da **fonte do elemento pai**     |                                      |
-| `rem`         | Relativo à fonte do **elemento raiz (html)**         |                                      |
-| `vw` / `vh`   | Relativo à largura/altura da **viewport** (1vw = 1%) |                                      |
-
----
-
-## 🎨 Cores
-
-| Tipo            | Exemplo                     | Explicação                       |
-| --------------- | --------------------------- | -------------------------------- |
-| **Hexadecimal** | `#ff0000`                   | Vermelho puro (R=FF, G=00, B=00) |
-| **RGB**         | `rgb(255, 0, 0)`            | Vermelho                         |
-| **RGBA**        | `rgba(255, 0, 0, 0.5)`      | Vermelho com transparência       |
-| **HSL**         | `hsl(0, 100%, 50%)`         | Matiz, saturação, luminosidade   |
-| **HSLA**        | `hsla(120, 100%, 50%, 0.5)` | Com transparência                |
-
-💡 Por que o vermelho é `#ff0000` e não `#990000`?
-
-> Porque `FF` (255 em decimal) é o valor **máximo** de intensidade no canal vermelho.
-> `99` é um tom mais escuro (153 em decimal).
-
----
-
-## ✏️ Propriedades de texto
-
-```css
-p {
-  color: red;
-  background-color: yellow;
-  font-style: italic;
-  font-weight: bold;
-  font-size: 20px;
-  text-decoration: underline;
-  text-transform: uppercase;
-  text-align: center;
-  line-height: 1.5;
-  letter-spacing: 1px;
-  word-spacing: 5px;
-  text-indent: 40px;
-  text-shadow: 2px 2px 5px gray;
-}
-```
-
----
-
-## 📐 Tamanho e responsividade
-
-| Propriedade              | Função                                                          |
-| ------------------------ | --------------------------------------------------------------- |
-| `width`, `height`        | Largura e altura                                                |
-| `max-width`, `min-width` | Limites máximos e mínimos                                       |
-| `auto`                   | Calculado automaticamente                                       |
-| `overflow`               | Controla conteúdo que “transborda” (`hidden`, `scroll`, `auto`) |
-
----
-
-## 📍 Position e Z-index
-
-| Valor      | Descrição                                                |
-| ---------- | -------------------------------------------------------- |
-| `static`   | Padrão (fluxo normal)                                    |
-| `relative` | Move em relação à posição original                       |
-| `absolute` | Posiciona relativo ao **primeiro ancestral posicionado** |
-| `fixed`    | Fixa na tela (mesmo com scroll)                          |
-| `sticky`   | Fixa quando chega ao topo da tela                        |
-| `z-index`  | Define a **ordem de sobreposição** (maior = na frente)   |
-
----
 
 ## 📱 Media Queries
 
