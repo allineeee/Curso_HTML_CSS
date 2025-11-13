@@ -52,19 +52,22 @@
     - ```<div>``` -> bloco genérico (sem significado semântico)
     - ```<span>``` -> container inline genérico
 
+### HTML Semântico
+
+- Usar tags semânticas melhora acessibilidade (por exemplo, softwares para deficientes visuais) e SEO.
+- ```<strong>``` indica importância, enquanto ```<b>``` apenas muda o estilo visual.
+- ```<em>``` tem valor semântico (ênfase), enquanto ```<i>``` apenas aplica itálico.
+- principais tags semânticas: `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<aside>`, `<footer>`  
 
 
-- html semântico: usar as tags ```<h>```, por exemplo, ajuda quando um leitor para deficientes visuais lê o site
 - existem tags que são blocos. E existem tags que não podem ir dentro de outras
 - toda tag html pode receber um atributo style, que recebe um css dentro
-- tag ```<b>``` e tag ```<strong>``` deixam um texto em negrito. Porém, a tag ```<strong>``` é uma tag semântica, ela deixa a palavra "mais forte" para o leitor.
-- tags semânticas
-- bold x strong
+
+
+
 - estado lógico x estado fisico
-- tag i x em (ambas deixam o texto em itálico)
 - tag de link ```<a href="" target="_blank">coloca link</a>```. O target define configurações para seu link, o '_blank', por exemplo, abre o link em uma nova aba.
 - tags small, s, u, sup, sub, q(citação)
-- tags inlines
 - tags que não pode, vir dentro da tag p. porque não são tags inline: blockquote...
 - containers: span x div
 - tags nav, section, article, aside
@@ -88,42 +91,10 @@
 
 
 
-##  HTML semântico
 
-* Usar tags semânticas melhora **acessibilidade e SEO**.
-* Exemplo: `<strong>` indica importância, enquanto `<b>` apenas muda o estilo visual.
-* Exemplo: `<em>` tem valor semântico (ênfase), enquanto `<i>` apenas aplica itálico.
 
-### Principais tags semânticas
-
-| Tag         | Função                                   |
-| ----------- | ---------------------------------------- |
-| `<header>`  | Cabeçalho da página ou seção             |
-| `<nav>`     | Navegação principal                      |
-| `<main>`    | Conteúdo principal                       |
-| `<section>` | Agrupa conteúdo relacionado              |
-| `<article>` | Conteúdo independente (ex: post de blog) |
-| `<aside>`   | Conteúdo complementar ou barra lateral   |
-| `<footer>`  | Rodapé da página                         |
-
----
-
-##  Texto e formatação
-
-* `<strong>` → negrito semântico
-* `<b>` → apenas visual
-* `<em>` → itálico semântico
-* `<i>` → apenas visual
-* `<u>` → sublinhado
-* `<s>` → texto riscado
-* `<small>` → texto menor
-* `<sup>` → sobrescrito
-* `<sub>` → subscrito
-* `<q>` → citação curta (usa aspas automáticas)
-* `<blockquote>` → citação longa (bloco)
-* **Evite usar `<b>` e `<i>` apenas para aparência** — prefira CSS.
-
----
+ 
+ 
 
 ##  Links
 
