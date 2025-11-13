@@ -286,11 +286,11 @@ body {
 ```
 - `inherit` força a herança de um valor do pai.
 
-  ```css
-  p {
-    color: inherit;
-  }
-  ```
+```css
+p {
+color: inherit;
+}
+```
 
 
 ### Contadores no CSS
@@ -307,6 +307,58 @@ h2::before {
   content: "Seção " counter(secao) ": ";
 }
 ```
+
+### Media Queries
+
+- Usadas para aplicar estilos dependendo do tamanho da tela.
+
+```css
+@media (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
+```
+- tipos mais comuns:
+    - `max-width`: até X pixels
+    - `min-width`: a partir de X pixels
+    - `orientation: landscape` (horizontal)
+- https://developer.mozilla.org/pt-BR/docs/Web/CSS/Guides/Media_queries/Using
+
+### Flexbox  
+
+- Define um container flexível com `display: flex;`
+- Controla o eixo principal (horizontal por padrão) e o eixo cruzado (vertical)
+
+| Propriedade       | Função                        |
+| ----------------- | ----------------------------- |
+| `flex-direction`  | Direção (row, column)         |
+| `justify-content` | Alinhamento no eixo principal |
+| `align-items`     | Alinhamento no eixo cruzado   |
+| `align-content`   | Alinha linhas extras          |
+| `flex-wrap`       | Quebra ou não a linha         |
+| `flex-grow`       | Quanto o item cresce          |
+| `gap`             | Espaçamento entre itens       |
+
+- https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+
+
+### Grid Layout
+
+- Ativado com `display: grid;`
+- Permite definir linhas e colunas com precisão.
+
+```css
+/* nesse caso, define 3 colunas */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+```
+- https://css-tricks.com/snippets/css/complete-guide-grid/
+
 
 
 
@@ -390,14 +442,12 @@ h2::before {
 
 - herança no css
 
-- propriedade  (inline, block, flex, grid), clear: both
 
 
 
 - links de ancoras
 
-- media queries com exemplos
-- https://developer.mozilla.org/pt-BR/docs/Web/CSS/Guides/Media_queries/Using
+- 
 - flexbox (eixo principal, eixo perpendicular, align content, align items, justify content, cross start, cross axis, cross end, flex flow, flex grow)
 
 
@@ -413,61 +463,4 @@ h2::before {
 
 
 
-
-
-## 📱 Media Queries
-
-Usadas para aplicar estilos **dependendo do tamanho da tela**.
-
-```css
-@media (max-width: 600px) {
-  body {
-    background-color: lightblue;
-  }
-}
-```
-
-💡 Tipos comuns:
-
-* `max-width`: até X pixels
-* `min-width`: a partir de X pixels
-* `orientation: landscape` (horizontal)
-
----
-
-## 🧭 Flexbox (Layout flexível)
-
-* Define um **container flexível** com `display: flex;`
-* Controla o **eixo principal** (horizontal por padrão) e o **eixo cruzado** (vertical)
-
-| Propriedade       | Função                        |
-| ----------------- | ----------------------------- |
-| `flex-direction`  | Direção (row, column)         |
-| `justify-content` | Alinhamento no eixo principal |
-| `align-items`     | Alinhamento no eixo cruzado   |
-| `align-content`   | Alinha linhas extras          |
-| `flex-wrap`       | Quebra ou não a linha         |
-| `flex-grow`       | Quanto o item cresce          |
-| `gap`             | Espaçamento entre itens       |
-
-📚 [Guia Flexbox CSS-Tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
-
----
-
-## 🧩 Grid Layout
-
-* Ativado com `display: grid;`
-* Permite definir linhas e colunas com precisão.
-
-Exemplo:
-
-```css
-.container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 10px;
-}
-```
-
-📚 [Guia Grid — CSS-Tricks](https://css-tricks.com/snippets/css/complete-guide-grid/)
 
