@@ -2,10 +2,13 @@
 
 ### Teoria
 
-- tags são case insensitives
-- existem tags com e sem corpo (tags com corpo suportam outras tags dentro delas)
-- nas tags sem corpo, pode ou não ter uma barra no final: ```<meta>``` ou ```<meta/>```
-- tag ```<head>``` define metadados sobre o html
+- As tags HTML são case-insensitive (não diferenciam maiúsculas e minúsculas), mas por convenção usam minúsculas
+- Existem tags com corpo (que possuem abertura e fechamento) e tags sem corpo (pode ou não ter uma barra no final):
+```html
+    <p>Com corpo</p>
+    <meta /> <!-- Sem corpo -->
+```
+- A tag ```<head>``` define metadados do documento (charset, título, links de estilo, scripts etc).
 - comentário em HTML:
 ```html
 <!-- Exemplo de comentário -->
@@ -21,6 +24,7 @@
     <!-- CSS também pode ir aqui. Usando arquivo ou a tag style -->
 </head>
 <body>
+    <!-- Conteúdo visível -->
 </body>
 </html>
 ```
@@ -63,44 +67,7 @@
 
 
 
-## Curso HTML5
 
-### Estrutura e fundamentos
-
-* As **tags HTML são *case-insensitive*** (não diferenciam maiúsculas e minúsculas), mas por convenção usam **minúsculas**.
-* Existem **tags com corpo** (que possuem abertura e fechamento) e **tags sem corpo** (*self-closing*):
-
-  ```html
-  <p>Com corpo</p>
-  <meta /> <!-- Sem corpo -->
-  ```
-* Tags sem corpo podem ou não ter a barra final: `<meta>` ou `<meta />`.
-* A tag `<head>` define **metadados** do documento (charset, título, links de estilo, scripts etc).
-
-### Estrutura mínima de um documento HTML
-
-```html
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu HTML</title>
-    <!-- CSS pode ser incluído aqui, via <style> ou <link rel="stylesheet"> -->
-</head>
-<body>
-    <!-- Conteúdo visível -->
-</body>
-</html>
-```
-
-### Comentários
-
-```html
-<!-- Exemplo de comentário -->
-```
-
----
 
 ##  Identificadores e Classes
 
