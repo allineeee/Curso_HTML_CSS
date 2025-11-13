@@ -1,5 +1,7 @@
 ## Curso HTML5
 
+### Teoria
+
 - tags são case insensitives
 - existem tags com e sem corpo (tags com corpo suportam outras tags dentro delas)
 - nas tags sem corpo, pode ou não ter uma barra no final: ```<meta>``` ou ```<meta/>```
@@ -59,13 +61,9 @@
 
 
 
-Perfeito, Alline 👏 — suas anotações estão muito bem estruturadas!
-Abaixo fiz **correções de ortografia**, **melhorias na clareza**, e **acrescentei tópicos essenciais** para consolidar o conteúdo.
-Mantive o estilo simples e direto que você já está usando, mas organizei melhor alguns pontos e incluí explicações extras com exemplos.
 
----
 
-## 📘 Curso HTML5
+## Curso HTML5
 
 ### Estrutura e fundamentos
 
@@ -104,7 +102,7 @@ Mantive o estilo simples e direto que você já está usando, mas organizei melh
 
 ---
 
-## 🧱 Identificadores e Classes
+##  Identificadores e Classes
 
 * **id** é único — não deve se repetir na página.
 * **class** pode se repetir e uma tag pode ter várias classes:
@@ -116,7 +114,7 @@ Mantive o estilo simples e direto que você já está usando, mas organizei melh
 
 ---
 
-## 🧩 Tipos de tags
+##  Tipos de tags
 
 | Tipo            | Exemplo                     | Características                                          |
 | --------------- | --------------------------- | -------------------------------------------------------- |
@@ -130,7 +128,7 @@ Mantive o estilo simples e direto que você já está usando, mas organizei melh
 
 ---
 
-## 🧠 HTML semântico
+##  HTML semântico
 
 * Usar tags semânticas melhora **acessibilidade e SEO**.
 * Exemplo: `<strong>` indica importância, enquanto `<b>` apenas muda o estilo visual.
@@ -150,7 +148,7 @@ Mantive o estilo simples e direto que você já está usando, mas organizei melh
 
 ---
 
-## 📝 Texto e formatação
+##  Texto e formatação
 
 * `<strong>` → negrito semântico
 * `<b>` → apenas visual
@@ -167,7 +165,7 @@ Mantive o estilo simples e direto que você já está usando, mas organizei melh
 
 ---
 
-## 🔗 Links
+##  Links
 
 ```html
 <a href="https://site.com" target="_blank">Abrir em nova aba</a>
@@ -179,7 +177,7 @@ Mantive o estilo simples e direto que você já está usando, mas organizei melh
 
 ---
 
-## 📋 Listas
+##  Listas
 
 | Tipo             | Tag    | Descrição                                      |
 | ---------------- | ------ | ---------------------------------------------- |
@@ -197,7 +195,7 @@ Exemplo:
 
 ---
 
-## 🧮 Tabelas
+##  Tabelas
 
 ```html
 <table>
@@ -219,7 +217,7 @@ Exemplo:
 
 ---
 
-## 🧰 Formulários
+##  Formulários
 
 * Um `<form>` **não pode conter outro `<form>`** (não é permitido aninhar).
 * `<label>` associada a um campo é **clicável** quando o `for` corresponde ao `id` do input.
@@ -253,7 +251,7 @@ Exemplo:
 
 ---
 
-## 🎨 CSS Inline
+##  CSS Inline
 
 * Toda tag pode receber o atributo `style`:
 
@@ -263,7 +261,7 @@ Exemplo:
 
 ---
 
-## 📏 Box Model e espaçamento
+##  Box Model e espaçamento
 
 * `padding`: espaçamento **interno** (dentro da borda)
 * `margin`: espaçamento **externo**
@@ -271,7 +269,7 @@ Exemplo:
 
 ---
 
-## 🔍 Extras úteis
+##  Extras úteis
 
 * `lang="pt-BR"` → define o idioma da página (importante para acessibilidade)
 * `meta viewport` → garante responsividade em dispositivos móveis
@@ -279,5 +277,4 @@ Exemplo:
 
 ---
 
-Quer que eu adicione uma **seção sobre imagens, links e multimídia** (`<img>`, `<video>`, `<audio>`, `<figure>` e `<figcaption>`)?
-Ela complementaria bem esse resumo.
+
