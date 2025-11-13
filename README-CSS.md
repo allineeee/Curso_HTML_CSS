@@ -419,4 +419,5 @@ h2::before {
 
 ## pesquisar mais
 
-grid area e variaveis no grid (template-columns e template-rows)
+- grid areas e variaveis no grid (template-columns e template-rows)
+
