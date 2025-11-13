@@ -158,13 +158,9 @@
 
 
 
-Perfeito, Alline 👏
-Esses são pontos que confundem mesmo no começo de HTML — porque envolvem **semântica**, **hierarquia de elementos** e **estrutura visual (bloco x inline)**.
-Vamos por partes, de forma clara e com exemplos práticos 👇
 
----
 
-## 🧱 Containers x Tags de Bloco
+## Containers x Tags de Bloco
 
 **Containers** são **tags genéricas usadas apenas para agrupar conteúdo** — elas servem como “caixas” que não têm significado semântico próprio.
 
@@ -229,27 +225,9 @@ Por isso, o código acima **é inválido** em HTML5.
 
 ---
 
-## ⚙️ Estado Lógico x Estado Físico
 
-Esse é um conceito mais teórico, mas muito importante na **semântica do HTML**.
 
-| Tipo de Estado                | O que representa                                  | Exemplo                      | Visual                                                                 |
-| ----------------------------- | ------------------------------------------------- | ---------------------------- | ---------------------------------------------------------------------- |
-| **Estado Físico**             | Apenas a **aparência visual** (como fica na tela) | `<b>`, `<i>`, `<u>`          | Deixa o texto em negrito, itálico, sublinhado etc                      |
-| **Estado Lógico (semântico)** | Representa **significado** ou **função** do texto | `<strong>`, `<em>`, `<cite>` | Diz ao navegador e leitores de tela *por que* aquele texto é diferente |
-
-💡 **Exemplo prático:**
-
-```html
-<p><b>Aviso:</b> você está atrasada!</p> <!-- Apenas visual -->
-<p><strong>Aviso:</strong> você está atrasada!</p> <!-- Significa "importante" -->
-```
-
-→ Ambos ficam em negrito, mas **`<strong>` tem significado semântico**, enquanto `<b>` não.
-
----
-
-## ✍️ Tags `small`, `s`, `u`, `sup`, `sub`, `q`
+##  Tags `small`, `s`, `u`, `sup`, `sub`, `q`
 
 | Tag       | Função                                                     | Exemplo                 | Visual           |
 | --------- | ---------------------------------------------------------- | ----------------------- | ---------------- |
@@ -262,35 +240,35 @@ Esse é um conceito mais teórico, mas muito importante na **semântica do HTML*
 
 ---
 
-## ❌ Tags que não podem ir dentro de `<p>`
+##  Tags que não podem ir dentro de `<p>`
 
 O `<p>` (parágrafo) **só aceita conteúdo inline**.
 
 Ou seja:
 
-* ✅ Pode conter: `<a>`, `<span>`, `<strong>`, `<em>`, `<img>`, `<small>` etc.
-* ❌ Não pode conter: `<div>`, `<section>`, `<blockquote>`, `<ul>`, `<table>`, `<form>`...
+*  Pode conter: `<a>`, `<span>`, `<strong>`, `<em>`, `<img>`, `<small>` etc.
+*  Não pode conter: `<div>`, `<section>`, `<blockquote>`, `<ul>`, `<table>`, `<form>`...
 
-👉 Motivo:
+Motivo:
 Essas são **tags de bloco**, e o parágrafo é pensado para conter **texto corrido**, não seções.
 
 ---
 
-## 🧱 Containers: `<span>` x `<div>`
+## Containers: `<span>` x `<div>`
 
 | Tag      | Tipo       | Descrição                                                                           | Exemplo                                               |
 | -------- | ---------- | ----------------------------------------------------------------------------------- | ----------------------------------------------------- |
 | `<div>`  | **Bloco**  | Agrupa conteúdo em nível de bloco (ex: várias tags dentro de uma seção visual)      | `<div class="container"></div>`                       |
 | `<span>` | **Inline** | Agrupa partes de texto dentro de uma linha, para aplicar estilo sem quebrar o fluxo | `O <span class="vermelho">texto</span> está colorido` |
 
-💡 Resumo rápido:
+ Resumo rápido:
 
 * Use `<div>` para **agrupamentos grandes** (layout, seções).
 * Use `<span>` para **pequenos trechos de texto** (estilização pontual).
 
 ---
 
-## 🧭 Tags `nav`, `section`, `article`, `aside`
+##  Tags `nav`, `section`, `article`, `aside`
 
 Essas são **tags semânticas estruturais**, introduzidas no HTML5.
 
@@ -318,7 +296,7 @@ Essas são **tags semânticas estruturais**, introduzidas no HTML5.
 
 ---
 
-## 🧠 O que são elementos com semântica?
+##  O que são elementos com semântica?
 
 Um **elemento semântico** é aquele que **tem um significado próprio**, tanto para humanos quanto para máquinas (navegadores, leitores de tela, buscadores).
 
@@ -330,20 +308,14 @@ Exemplo:
 
 Já `<div>` ou `<span>` **não têm semântica**, servem apenas para estruturar.
 
-💬 Em resumo:
+ Em resumo:
 
-> **Semântica = significado.**
-> Quando o HTML “fala o que é”, ele é semântico.
+ **Semântica = significado.**
+ Quando o HTML “fala o que é”, ele é semântico.
 
 ---
 
-Se quiser, posso montar uma **tabela-resumo visual** com:
 
-* tipo do elemento (bloco / inline / semântico)
-* função principal
-* exemplos de uso
-
-Quer que eu monte isso pra você?
 
 
 
