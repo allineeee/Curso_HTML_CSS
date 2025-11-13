@@ -18,6 +18,20 @@
   ```
 - Calcular especificidade: https://specificity.keegan.st/
 
+### Seletores básicos
+
+| Tipo            | Exemplo   | Descrição                                   |
+| --------------- | --------- | ------------------------------------------- |
+| Universal       | `*`       | Seleciona todos os elementos                |
+| Tag             | `p`       | Seleciona todas as tags `<p>`               |
+| Classe          | `.classe` | Seleciona elementos com a classe            |
+| ID              | `#id`     | Seleciona elemento com o ID específico      |
+| Descendente     | `div p`   | Seleciona `<p>` **dentro** de `<div>`       |
+| Filho direto    | `div > p` | Seleciona `<p>` **filho direto** de `<div>` |
+| Irmão adjacente | `h1 + p`  | Seleciona `<p>` **logo após** um `<h1>`     |
+| Irmãos gerais   | `h1 ~ p`  | Seleciona **todos** os `<p>` após `<h1>`    |
+
+---
 
 ### AAAAAAA
 
@@ -261,20 +275,7 @@ p{
 
 
 
-### Seletores básicos
 
-| Tipo            | Exemplo   | Descrição                                   |
-| --------------- | --------- | ------------------------------------------- |
-| Universal       | `*`       | Seleciona todos os elementos                |
-| Tag             | `p`       | Seleciona todas as tags `<p>`               |
-| Classe          | `.classe` | Seleciona elementos com a classe            |
-| ID              | `#id`     | Seleciona elemento com o ID específico      |
-| Descendente     | `div p`   | Seleciona `<p>` **dentro** de `<div>`       |
-| Filho direto    | `div > p` | Seleciona `<p>` **filho direto** de `<div>` |
-| Irmão adjacente | `h1 + p`  | Seleciona `<p>` **logo após** um `<h1>`     |
-| Irmãos gerais   | `h1 ~ p`  | Seleciona **todos** os `<p>` após `<h1>`    |
-
----
 
 ### Seletores de atributo
 
