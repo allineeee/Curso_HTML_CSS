@@ -154,19 +154,7 @@
 <p>O <span class="vermelho">texto</span> está colorido</p>
 ```
 
-
-
-
-
-
-
-
-
-
-
-
-
-##  Tags `nav`, `section`, `article`, `aside`
+## Tags nav, section, article, aside
 
 - tags semânticas estruturais, do HTML5.
 
