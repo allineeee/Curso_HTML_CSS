@@ -28,6 +28,10 @@
 </body>
 </html>
 ```
+- `lang="pt-BR"` -> define o idioma da página (importante para acessibilidade)
+- `meta viewport` -> garante responsividade em dispositivos móveis
+- `alt` nas imagens -> texto alternativo para descrever algo (importante para a acessibilidade da página)
+
 
 ### IDs e Classes
 
@@ -104,11 +108,32 @@
 </table>
 ```
 
+##  Formulários
+
+- Um `<form>` não pode conter outro `<form>` dentro dele
+- `<label>` associada a um campo é clicável quando o `for` corresponde ao `id` do input.
+- Exemplo:
+  ```html
+  <label for="nome">Nome:</label>
+  <input id="nome" type="text">
+  ```
+- `accept="image/*"` -> limita o tipo de arquivo aceito (nesse caso, imagens)
+- `cols` e `rows` no `<textarea>` definem o tamanho da área de texto (o cols pode contar o número de caracteres).
+  ```html
+  <textarea rows="5" cols="30"></textarea>
+  ```
+- tipos mais comuns de inputs: text, number, email, password, checkbox, radio, date, file, color, range, submit 
+
+
+##  CSS Inline
+
+- Toda tag pode receber o atributo `style`:
+```html
+  <p style="color: red; font-size: 20px;">Texto colorido</p>
+```
 
 
 
-
-### AAAA
 
 
 
@@ -117,27 +142,21 @@
 
 
 ## pesquisar mais
-- containers e tags bloco
+- containers x tags de bloco
 
-- existem tags que são blocos. E existem tags que não podem ir dentro de outras
-- toda tag html pode receber um atributo style, que recebe um css dentro
-
+- existem tags que são blocos. E existem tags que não podem ir dentro de outras???
 
 
 - estado lógico x estado fisico
 
 - tags small, s, u, sup, sub, q(citação)
-- tags que não pode, vir dentro da tag p. porque não são tags inline: blockquote...
-- containers: span x div
+- tags que não pode, vir dentro da tag p. porque não são tags inline: blockquote...???
+- containers: span x div??
 - tags nav, section, article, aside
-- elemetos que tem semantica???section??
-- padding: Top Direita Bottom Esquerda (sentido horário)
+- o que são elemetos que tem semantica???section??
 
-- é proibido aninhar um form dentro de outro form??
-- label são clicáveis?
-- accept="image/*"???
-- tipos da tag input
-- cols e rows no textareas, cols são a quantidade de caracteres????
+
+
 
 
 
@@ -149,64 +168,10 @@
 
 
 
-##  Formulários
 
-* Um `<form>` **não pode conter outro `<form>`** (não é permitido aninhar).
-* `<label>` associada a um campo é **clicável** quando o `for` corresponde ao `id` do input.
 
-  ```html
-  <label for="nome">Nome:</label>
-  <input id="nome" type="text">
-  ```
-* `accept="image/*"` → limita o tipo de arquivo aceito (nesse caso, imagens)
-* `cols` e `rows` no `<textarea>` definem o **tamanho da área de texto**, não o número de caracteres exatos.
 
-  ```html
-  <textarea rows="5" cols="30"></textarea>
-  ```
 
-### Tipos comuns de `<input>`
 
-| Tipo     | Descrição                |
-| -------- | ------------------------ |
-| text     | texto livre              |
-| number   | números                  |
-| email    | valida formato de e-mail |
-| password | campo de senha           |
-| checkbox | múltipla escolha         |
-| radio    | escolha única            |
-| date     | data                     |
-| file     | upload de arquivo        |
-| color    | seletor de cor           |
-| range    | controle deslizante      |
-| submit   | botão de envio           |
-
----
-
-##  CSS Inline
-
-* Toda tag pode receber o atributo `style`:
-
-  ```html
-  <p style="color: red; font-size: 20px;">Texto colorido</p>
-  ```
-
----
-
-##  Box Model e espaçamento
-
-* `padding`: espaçamento **interno** (dentro da borda)
-* `margin`: espaçamento **externo**
-* Ordem dos valores: **Top → Right → Bottom → Left** (sentido horário)
-
----
-
-##  Extras úteis
-
-* `lang="pt-BR"` → define o idioma da página (importante para acessibilidade)
-* `meta viewport` → garante responsividade em dispositivos móveis
-* `alt` nas imagens → texto alternativo (importante para SEO e acessibilidade)
-
----
 
 

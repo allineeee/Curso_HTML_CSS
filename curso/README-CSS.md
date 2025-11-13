@@ -241,3 +241,12 @@ p{
 - inherit é herança????
 - criar contador no css???
 - pq tem content: ''; no pseudo???
+
+- 
+##  Box Model e espaçamento
+
+* `padding`: espaçamento **interno** (dentro da borda)
+* `margin`: espaçamento **externo**
+* Ordem dos valores: **Top → Right → Bottom → Left** (sentido horário)
+
+- padding: Top Direita Bottom Esquerda (sentido horário). possibilidades de valores para o padding?
