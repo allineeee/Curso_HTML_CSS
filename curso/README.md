@@ -158,6 +158,195 @@
 
 
 
+Perfeito, Alline 👏
+Esses são pontos que confundem mesmo no começo de HTML — porque envolvem **semântica**, **hierarquia de elementos** e **estrutura visual (bloco x inline)**.
+Vamos por partes, de forma clara e com exemplos práticos 👇
+
+---
+
+## 🧱 Containers x Tags de Bloco
+
+**Containers** são **tags genéricas usadas apenas para agrupar conteúdo** — elas servem como “caixas” que não têm significado semântico próprio.
+
+### Exemplos de containers:
+
+* `<div>` → container **de bloco**
+* `<span>` → container **inline**
+
+Essas tags não dizem *o que o conteúdo é*, apenas o **organizam visualmente** ou **para aplicar CSS/JS**.
+
+---
+
+**Tags de bloco (block-level)** são aquelas que:
+
+* Ocupam **toda a largura disponível**.
+* Começam **sempre em uma nova linha**.
+* Podem conter **outros elementos**, inclusive outros blocos ou inline.
+
+Exemplos:
+
+```html
+<div>, <p>, <section>, <article>, <header>, <footer>, <nav>, <table>, <ul>, <ol>, <form>
+```
+
+### Diferença:
+
+| Tipo          | Exemplo                         | Característica                            |
+| ------------- | ------------------------------- | ----------------------------------------- |
+| **Container** | `<div>`, `<span>`               | Agrupam elementos (sem significado)       |
+| **Bloco**     | `<section>`, `<article>`, `<p>` | Estruturalmente ocupam um bloco na página |
+
+---
+
+## 🧩 “Existem tags que são blocos. E existem tags que não podem ir dentro de outras”
+
+Sim!
+Cada tag tem **regras de aninhamento** — ou seja, **onde ela pode ou não ser colocada**.
+
+Por exemplo:
+
+```html
+<p>
+  Isso é um parágrafo.
+  <blockquote>Isso é uma citação longa.</blockquote> <!-- ERRADO -->
+</p>
+```
+
+➡️ `<blockquote>` é uma **tag de bloco**, e o `<p>` só pode conter **elementos inline** (como `<a>`, `<span>`, `<strong>` etc).
+Por isso, o código acima **é inválido** em HTML5.
+
+✅ Forma correta:
+
+```html
+<p>Isso é um parágrafo.</p>
+<blockquote>Isso é uma citação longa.</blockquote>
+```
+
+📘 **Regra geral:**
+
+* Tags **de bloco** → podem conter *tags inline* e até outros blocos (dependendo da tag).
+* Tags **inline** → só podem conter *outras inline* (não podem ter blocos dentro delas).
+
+---
+
+## ⚙️ Estado Lógico x Estado Físico
+
+Esse é um conceito mais teórico, mas muito importante na **semântica do HTML**.
+
+| Tipo de Estado                | O que representa                                  | Exemplo                      | Visual                                                                 |
+| ----------------------------- | ------------------------------------------------- | ---------------------------- | ---------------------------------------------------------------------- |
+| **Estado Físico**             | Apenas a **aparência visual** (como fica na tela) | `<b>`, `<i>`, `<u>`          | Deixa o texto em negrito, itálico, sublinhado etc                      |
+| **Estado Lógico (semântico)** | Representa **significado** ou **função** do texto | `<strong>`, `<em>`, `<cite>` | Diz ao navegador e leitores de tela *por que* aquele texto é diferente |
+
+💡 **Exemplo prático:**
+
+```html
+<p><b>Aviso:</b> você está atrasada!</p> <!-- Apenas visual -->
+<p><strong>Aviso:</strong> você está atrasada!</p> <!-- Significa "importante" -->
+```
+
+→ Ambos ficam em negrito, mas **`<strong>` tem significado semântico**, enquanto `<b>` não.
+
+---
+
+## ✍️ Tags `small`, `s`, `u`, `sup`, `sub`, `q`
+
+| Tag       | Função                                                     | Exemplo                 | Visual           |
+| --------- | ---------------------------------------------------------- | ----------------------- | ---------------- |
+| `<small>` | Texto menor, usado para observações, direitos autorais etc | `<small>© 2025</small>` | Texto menor      |
+| `<s>`     | Texto riscado (informação incorreta ou desatualizada)      | `<s>R$ 100</s>`         | ~~R$ 100~~       |
+| `<u>`     | Sublinhado (sem semântica)                                 | `<u>Texto</u>`          | <u>Texto</u>     |
+| `<sup>`   | Sobrescrito (em cima)                                      | x<sup>2</sup>           | x²               |
+| `<sub>`   | Subscrito (em baixo)                                       | H<sub>2</sub>O          | H₂O              |
+| `<q>`     | Citação curta, com aspas automáticas                       | `<q>Ser ou não ser</q>` | “Ser ou não ser” |
+
+---
+
+## ❌ Tags que não podem ir dentro de `<p>`
+
+O `<p>` (parágrafo) **só aceita conteúdo inline**.
+
+Ou seja:
+
+* ✅ Pode conter: `<a>`, `<span>`, `<strong>`, `<em>`, `<img>`, `<small>` etc.
+* ❌ Não pode conter: `<div>`, `<section>`, `<blockquote>`, `<ul>`, `<table>`, `<form>`...
+
+👉 Motivo:
+Essas são **tags de bloco**, e o parágrafo é pensado para conter **texto corrido**, não seções.
+
+---
+
+## 🧱 Containers: `<span>` x `<div>`
+
+| Tag      | Tipo       | Descrição                                                                           | Exemplo                                               |
+| -------- | ---------- | ----------------------------------------------------------------------------------- | ----------------------------------------------------- |
+| `<div>`  | **Bloco**  | Agrupa conteúdo em nível de bloco (ex: várias tags dentro de uma seção visual)      | `<div class="container"></div>`                       |
+| `<span>` | **Inline** | Agrupa partes de texto dentro de uma linha, para aplicar estilo sem quebrar o fluxo | `O <span class="vermelho">texto</span> está colorido` |
+
+💡 Resumo rápido:
+
+* Use `<div>` para **agrupamentos grandes** (layout, seções).
+* Use `<span>` para **pequenos trechos de texto** (estilização pontual).
+
+---
+
+## 🧭 Tags `nav`, `section`, `article`, `aside`
+
+Essas são **tags semânticas estruturais**, introduzidas no HTML5.
+
+| Tag         | Significado                          | Uso típico                        |
+| ----------- | ------------------------------------ | --------------------------------- |
+| `<nav>`     | Área de navegação                    | Menus, links principais           |
+| `<section>` | Seção de conteúdo relacionada        | Blocos temáticos, capítulos       |
+| `<article>` | Conteúdo independente e reutilizável | Post de blog, notícia, comentário |
+| `<aside>`   | Conteúdo secundário ou lateral       | Barra lateral, anúncios, notas    |
+
+### Exemplo:
+
+```html
+<main>
+  <article>
+    <h2>Notícia</h2>
+    <p>Texto do artigo...</p>
+  </article>
+
+  <aside>
+    <h3>Outras notícias</h3>
+  </aside>
+</main>
+```
+
+---
+
+## 🧠 O que são elementos com semântica?
+
+Um **elemento semântico** é aquele que **tem um significado próprio**, tanto para humanos quanto para máquinas (navegadores, leitores de tela, buscadores).
+
+Exemplo:
+
+* `<section>` → indica uma **seção de conteúdo relacionada**.
+* `<header>` → indica **cabeçalho** da página ou de uma seção.
+* `<footer>` → indica **rodapé**.
+
+Já `<div>` ou `<span>` **não têm semântica**, servem apenas para estruturar.
+
+💬 Em resumo:
+
+> **Semântica = significado.**
+> Quando o HTML “fala o que é”, ele é semântico.
+
+---
+
+Se quiser, posso montar uma **tabela-resumo visual** com:
+
+* tipo do elemento (bloco / inline / semântico)
+* função principal
+* exemplos de uso
+
+Quer que eu monte isso pra você?
+
+
+
 
 
 
