@@ -72,11 +72,11 @@
 
 | Tipo             | Tag    | Descrição                                      |
 | ---------------- | ------ | ---------------------------------------------- |
-| **Não ordenada** | `<ul>` | Itens com marcadores                           |
+| **Não ordenada** | `<ul>` | Itens com marcadores (bolinha)                          |
 | **Ordenada**     | `<ol>` | Itens numerados (`type="A"`, `type="I"`, etc)  |
 | **Definição**    | `<dl>` | Lista de termos e definições (`<dt>` e `<dd>`) |
 
-Exemplo:
+- Exemplo de lista ordenada, que começa em 'C':
 
 ```html
 <ol type="A" start="3">
@@ -84,7 +84,40 @@ Exemplo:
 </ol>
 ```
 
-### aaa
+### Tabelas
+
+- `<th>` -> cabeçalho da coluna
+- `<td>` -> célula
+- `colspan` e `rowspan` mesclam células
+- `<caption>` usado para adicionar título na tabela
+
+```html
+<table>
+  <tr>
+    <th>Nome</th>
+    <th>Idade</th>
+  </tr>
+  <tr>
+    <td>Alline</td>
+    <td>29</td>
+  </tr>
+</table>
+```
+
+
+
+
+
+### AAAA
+
+
+
+
+
+
+
+## pesquisar mais
+- containers e tags bloco
 
 - existem tags que são blocos. E existem tags que não podem ir dentro de outras
 - toda tag html pode receber um atributo style, que recebe um css dentro
@@ -99,8 +132,7 @@ Exemplo:
 - tags nav, section, article, aside
 - elemetos que tem semantica???section??
 - padding: Top Direita Bottom Esquerda (sentido horário)
-- li x ul x ol(ver types e start) x dl
-- tabelas tr x th, colspan, rowspan
+
 - é proibido aninhar um form dentro de outro form??
 - label são clicáveis?
 - accept="image/*"???
@@ -110,47 +142,12 @@ Exemplo:
 
 
 
-
-## pesquisar mais
-- containers e tags bloco
-
-
-
-
-
-
  
  
 
 
 
----
 
-
-
----
-
-##  Tabelas
-
-```html
-<table>
-  <tr>
-    <th>Nome</th>
-    <th>Idade</th>
-  </tr>
-  <tr>
-    <td>Alline</td>
-    <td>25</td>
-  </tr>
-</table>
-```
-
-* `<th>` = cabeçalho da coluna
-* `<td>` = célula
-* `colspan` e `rowspan` mesclam células
-* Use `<caption>` para título da tabela
-
----
 
 ##  Formulários
 
