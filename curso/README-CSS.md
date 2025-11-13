@@ -420,35 +420,3 @@ h2::before {
             margin: 20px;
         }
 ```
-
-## Pesquisar mais
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-- https://css-tricks.com/snippets/css/a-guide-to-flexbox/
-- https://youtu.be/uHiSYokteNY?si=kGm4lEusCUBTHuff
-- https://youtu.be/odYCJU6NHss?si=jl4YplC_dlWtTzuR
-
-
-
-
-
-
-
-
