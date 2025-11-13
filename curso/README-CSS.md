@@ -288,10 +288,38 @@ body {
 
 ```css
 p {
-color: inherit;
+    color: inherit;
 }
 ```
 
+```html
+    <!-- nesse caso, a div filha herda as 
+     configurações da div pai -->
+    <div class="pai">
+        Pai
+        <div class="filha">
+            Filha
+        </div>
+    </div>
+```
+
+```html
+    <div class="pai">
+        Pai
+        <div class="filha outra qualquer">
+            Filha 1
+            <div class="filha outra qualquer">
+                Filha da filha
+            </div>
+        </div>
+        <div class="filha outra qualquer">
+            Filha 2
+            <div class="filha outra qualquer">
+                Filha da filha 2
+            </div>
+        </div>
+    </div>
+```
 
 ### Contadores no CSS
 
@@ -397,66 +425,26 @@ h2::before {
 
 
 
-- a tag style pode ficar em qualquer lugar no html??
--```<link rel="stylesheet" href="style.css">```
-- seleção de descendente
-- elementos com duas classes "pai filha"
-```html
-    <!-- nesse caso, a div filha herda as 
-     configurações da div pai -->
-    <div class="pai">
-        Pai
-        <div class="filha">
-            Filha
-        </div>
-    </div>
-```
-
-
-```html
-    <div class="pai">
-        Pai
-        <div class="filha outra qualquer">
-            Filha 1
-            <div class="filha outra qualquer">
-                Filha da filha
-            </div>
-        </div>
-        <div class="filha outra qualquer">
-            Filha 2
-            <div class="filha outra qualquer">
-                Filha da filha 2
-            </div>
-        </div>
-    </div>
-```
-
-
-
-- links que foram visitados e links que não foram visitados (a:link, a:visited)
 
 
 
 
 
 
-- herança no css
 
 
 
 
-- links de ancoras
 
-- 
-- flexbox (eixo principal, eixo perpendicular, align content, align items, justify content, cross start, cross axis, cross end, flex flow, flex grow)
+
+
+
 
 
 - https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 - https://youtu.be/uHiSYokteNY?si=kGm4lEusCUBTHuff
 - https://youtu.be/odYCJU6NHss?si=jl4YplC_dlWtTzuR
-- criar variaveis no css - :root{--primary-color: #0a1128;}
-- inherit é herança????
-- criar contador no css???
+
 
 
 
