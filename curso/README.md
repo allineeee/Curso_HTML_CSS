@@ -113,7 +113,7 @@
 </table>
 ```
 
-##  Formulários
+###  Formulários
 
 - Um `<form>` não pode conter outro `<form>` dentro dele
 - `<label>` associada a um campo é clicável quando o `for` corresponde ao `id` do input.
@@ -130,14 +130,14 @@
 - tipos mais comuns de inputs: text, number, email, password, checkbox, radio, date, file, color, range, submit 
 
 
-##  CSS Inline
+###  CSS Inline
 
 - Toda tag pode receber o atributo `style`:
 ```html
   <p style="color: red; font-size: 20px;">Texto colorido</p>
 ```
 
-## Containers x Tags de Bloco
+### Containers x Tags de Bloco
 
 - Containers são tags genéricas usadas apenas para agrupar conteúdo — elas servem como “caixas” que não têm significado semântico próprio.
 - Exemplos: 
@@ -154,7 +154,7 @@
 <p>O <span class="vermelho">texto</span> está colorido</p>
 ```
 
-## Tags nav, section, article, aside
+### Tags nav, section, article, aside
 
 - tags semânticas estruturais, do HTML5.
 

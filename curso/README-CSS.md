@@ -1,23 +1,27 @@
 ## Curso CSS3
 
-- css tem especificidade, alguns estilos podem sobrescrever outros, no caso o azul sobrescreve o vermelho, e o id tem especificidade forte, então a classe não sobrescreve ele:
-```html
-    <style>
-        h1 {
-            background: red;
-        }
+### Teoria
 
-        h1 {
-            background: blue;
-        }
-        #cabecalho-dois{
-            background: green;
-        }
-        .fundo-vermelho{
-            background: red;
-        }
-    </style>
-```
+- CSS tem especificidade (ordem de prioridade), alguns estilos podem sobrescrever outros
+- Quando vários seletores afetam o mesmo elemento, o navegador usa uma ordem de prioridade:
+  1. `!important` → prioridade máxima
+  2. Estilo inline (`style="..."`)
+  3. ID (`#id`)
+  4. Classe, pseudo-classes e atributos (`.classe`, `:hover`, `[attr]`)
+  5. Tag (elemento) (`div`, `p`, `h1`)
+  6. Herança e valores padrão
+- A "conta de especificidade" é representada como (IDs, Classes, Elementos):
+  ```css
+  #cabecalho { } /* (1,0,0) */
+  .fundo-vermelho { } /* (0,1,0) */
+  h1 { } /* (0,0,1) */
+  ```
+- Calcular especificidade: https://specificity.keegan.st/
+
+
+### AAAAAAA
+
+
 - o '#' é usado pra ids e o '.' para classes
 - no caso abaixo, a margin bottom do primeiro elemento, não é somada com a margi-top do segundo elemento, é usado a maior margin. Como nesse caso ambas as margins tem o mesmo tamanho, fica uma diferença de 20px entre os dois elementos
 ```css
@@ -256,31 +260,6 @@ p{
 
 
 
-##  Conceitos Fundamentais
-
-### Especificidade (prioridade de estilos)
-
-* Quando vários seletores afetam o mesmo elemento, o navegador usa uma **ordem de prioridade**:
-
-  1. `!important` → prioridade máxima
-  2. Estilo **inline** (`style="..."`)
-  3. **ID** (`#id`)
-  4. **Classe, pseudo-classes e atributos** (`.classe`, `:hover`, `[attr]`)
-  5. **Tag (elemento)** (`div`, `p`, `h1`)
-  6. Herança e valores padrão
-
-* A “conta de especificidade” é representada como **(IDs, Classes, Elementos)**
-  Exemplo:
-
-  ```css
-  #cabecalho { } /* (1,0,0) */
-  .fundo-vermelho { } /* (0,1,0) */
-  h1 { } /* (0,0,1) */
-  ```
-
-💡 Dica: use [specificity.keegan.st](https://specificity.keegan.st/) para testar regras.
-
----
 
 ### Seletores básicos
 
