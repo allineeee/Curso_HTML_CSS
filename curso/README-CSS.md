@@ -31,17 +31,101 @@
 | Irmão adjacente | `h1 + p`  | Seleciona `<p>` **logo após** um `<h1>`     |
 | Irmãos gerais   | `h1 ~ p`  | Seleciona **todos** os `<p>` após `<h1>`    |
 
+```css
+div {
+    color: initial;
+    margin-left: 20px;
+}
+
+.pai > .filha{
+    color: blue;
+}
+```
+
 ### Seletores de atributo
 
-| Sintaxe           | Significado                                 | Exemplo                            |        |         |
-| ----------------- | ------------------------------------------- | ---------------------------------- | ------ | ------- |
-| `[attr]`          | Tem o atributo                              | `[disabled]`                       |        |         |
-| `[attr="valor"]`  | Atributo igual a valor                      | `[type="text"]`                    |        |         |
-| `[attr~="valor"]` | Contém “valor” na lista separada por espaço | `[class~="ativo"]`                 |        |         |
-| `[attr            | ="valor"]`                                  | Valor igual ou inicia com “valor-” | `[lang | ="en"]` |
-| `[attr^="valor"]` | Valor começa com “valor”                    | `[src^="img/"]`                    |        |         |
-| `[attr$="valor"]` | Valor termina com “valor”                   | `[src$=".png"]`                    |        |         |
-| `[attr*="valor"]` | Valor contém “valor”                        | `[title*="promo"]`                 |        |         |
+```css
+/* tem o atributo */
+[meu-atributo]{
+    color: blue;
+}
+
+/* atributo igual ao carro */
+[meu-atributo="carro"]{
+    color: blue;
+}
+
+/* contém "carro" na lista que é separada por espaço */
+[meu-atributo~="carro"]{
+    color: blue;
+}
+
+/*  */
+[meu-atributo|="carro"]{
+    color: blue;
+}
+
+/* valor começa com "carro" */
+[meu-atributo^="carro"]{
+    color: blue;
+}
+
+/* valor termina com "carro" */
+[meu-atributo$="carro"]{
+    color: blue;
+}
+
+/* valor contém "carro" */
+[meu-atributo*="carro"]{
+    color: blue;
+}
+```
+
+###  Pseudo-classes
+
+- Representam estados especiais de um elemento.
+
+| Pseudo-classe  | Exemplo             | Descrição                                               |
+| -------------- | ------------------- | ------------------------------------------------------- |
+| `:hover`       | `a:hover`           | Quando o mouse está sobre o link                        |
+| `:active`      | `button:active`     | Enquanto está sendo clicado                             |
+| `:visited`     | `a:visited`         | Link já visitado                                        |
+| `:focus`       | `input:focus`       | Campo de formulário ativo                               |
+| `:checked`     | `input:checked`     | Checkbox selecionado                                    |
+| `:not()`       | `p:not(.meio)`      | Seleciona elementos que **não** correspondem ao seletor |
+| `:nth-child()` | `li:nth-child(odd)` | Elemento na posição N                                   |
+| `:last-child`  | `li:last-child`     | Último elemento filho                                   |
+
+- `odd` = ímpar | `even` = par | `3n + 2` = padrão matemático
+
+
+
+### Pseudo-elementos
+
+- Afetam partes específicas de um elemento.
+
+| Pseudo-elemento  | Exemplo           | Descrição                   |
+| ---------------- | ----------------- | --------------------------- |
+| `::before`       | `p::before`       | Insere conteúdo **antes**   |
+| `::after`        | `p::after`        | Insere conteúdo **depois**  |
+| `::first-letter` | `p::first-letter` | Primeira letra              |
+| `::first-line`   | `p::first-line`   | Primeira linha              |
+| `::selection`    | `::selection`     | Área selecionada pelo mouse |
+
+- Exemplo:
+
+```css
+p::after {
+  content: " — fim do texto";
+}
+p::selection {
+  background: black;
+  color: white;
+}
+```
+
+- `content: ' '` é obrigatório para gerar o pseudo-elemento, mesmo vazio (serve para criar formas, ícones ou efeitos visuais).
+
 
 
 
@@ -94,16 +178,7 @@
     </div>
 ```
 
-```css
-div {
-    color: initial;
-    margin-left: 20px;
-}
 
-.pai > .filha{
-    color: blue;
-}
-```
 ```html
     <div class="pai">
         Pai
@@ -121,50 +196,7 @@ div {
         </div>
     </div>
 ```
-- seletore de atributo etc:
-```css
-.pai h1+p{
-    color: red;
-}
 
-.pai p+h1{
-    color: yellow;
-}
-
-.pai h1~p{
-    color: yellow;
-}
-
-[meu-atributo]{
-    color: blue;
-}
-
-[meu-atributo="valor"]{
-    color: blue;
-}
-
-[meu-atributo~="valor"]{
-    color: blue;
-}
-
-[meu-atributo|="valor"]{
-    color: blue;
-}
-
-[meu-atributo^="valor"]{
-    color: blue;
-}
-
-[meu-atributo$="valor"]{
-    color: blue;
-}
-
-[meu-atributo*="valor"]{
-    color: blue;
-}
-
-
-```
 
 - seletores de pseudoclasses: hover...
 - links que foram visitados e links que não foram visitados (a:link, a:visited)
@@ -289,55 +321,6 @@ p{
 
 
 
-
----
-
-## 🔠 Pseudo-classes
-
-* Representam **estados especiais** de um elemento.
-
-| Pseudo-classe  | Exemplo             | Descrição                                               |
-| -------------- | ------------------- | ------------------------------------------------------- |
-| `:hover`       | `a:hover`           | Quando o mouse está sobre o link                        |
-| `:active`      | `button:active`     | Enquanto está sendo clicado                             |
-| `:visited`     | `a:visited`         | Link já visitado                                        |
-| `:focus`       | `input:focus`       | Campo de formulário ativo                               |
-| `:checked`     | `input:checked`     | Checkbox selecionado                                    |
-| `:not()`       | `p:not(.meio)`      | Seleciona elementos que **não** correspondem ao seletor |
-| `:nth-child()` | `li:nth-child(odd)` | Elemento na posição N                                   |
-| `:last-child`  | `li:last-child`     | Último elemento filho                                   |
-
-💡 `odd` = ímpar | `even` = par | `3n + 2` = padrão matemático
-
----
-
-## ✨ Pseudo-elementos
-
-Afetam **partes específicas** de um elemento.
-
-| Pseudo-elemento  | Exemplo           | Descrição                   |
-| ---------------- | ----------------- | --------------------------- |
-| `::before`       | `p::before`       | Insere conteúdo **antes**   |
-| `::after`        | `p::after`        | Insere conteúdo **depois**  |
-| `::first-letter` | `p::first-letter` | Primeira letra              |
-| `::first-line`   | `p::first-line`   | Primeira linha              |
-| `::selection`    | `::selection`     | Área selecionada pelo mouse |
-
-Exemplo:
-
-```css
-p::after {
-  content: " — fim do texto";
-}
-p::selection {
-  background: black;
-  color: white;
-}
-```
-
-💬 `content: ''` é obrigatório para gerar o pseudo-elemento, mesmo vazio (serve para criar formas, ícones ou efeitos visuais).
-
----
 
 ## 🧱 Box Model
 
