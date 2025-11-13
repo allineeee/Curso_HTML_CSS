@@ -121,10 +121,12 @@ ul li:nth-child(even) {
     background-color: darkturquoise;
 }
 
+/* colore de 3 em 3 */
 ul li:nth-child(3n) {
     background-color: deeppink;
 }
 
+/* colore de 3 em 3, mas a partir do 5º elemento */
 ul li:nth-child(3n + 5) {
     background-color: yellow;
 }
@@ -157,6 +159,21 @@ p::selection {
 - `content: ' '` é obrigatório para gerar o pseudo-elemento, mesmo vazio (serve para criar formas, ícones ou efeitos visuais).
 
 
+### Box Model
+
+O **box model** define como o espaço do elemento é calculado:
+
+```
++----------------------+
+|      margin          |  ← externo
+|  +----------------+  |
+|  |    border      |  |
+|  | +------------+ |  |
+|  | |  padding   | |  | ← interno
+|  | +------------+ |  |
+|  +----------------+  |
++----------------------+
+```
 
 
 ### AAAAAAA
@@ -234,8 +251,8 @@ p::selection {
 
 
 
-- especificidade no css (como faz a conta 1, 1, 0) e !important
-- https://specificity.keegan.st/
+
+
 - herança no css
 - unidade de medidas no css: %, auto, max, min, em
 - max-widht, min-width, height, view port
@@ -273,16 +290,14 @@ p{
 - https://developer.mozilla.org/pt-BR/docs/Web/CSS/Guides/Media_queries/Using
 - flexbox (eixo principal, eixo perpendicular, align content, align items, justify content, cross start, cross axis, cross end, flex flow, flex grow)
 - display: grid???
-- rever aulas:
-- 08:12:25 - Entenda o Flexbox
-- 08:55:46 - Entenda CSS Grid
+
 - https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 - https://youtu.be/uHiSYokteNY?si=kGm4lEusCUBTHuff
 - https://youtu.be/odYCJU6NHss?si=jl4YplC_dlWtTzuR
 - criar variaveis no css - :root{--primary-color: #0a1128;}
 - inherit é herança????
 - criar contador no css???
-- pq tem content: ''; no pseudo???
+
 
 - 
 ##  Box Model e espaçamento
@@ -302,7 +317,7 @@ p{
 
 
 
-## 🧱 Box Model
+##  Box Model
 
 O **box model** define como o espaço do elemento é calculado:
 
