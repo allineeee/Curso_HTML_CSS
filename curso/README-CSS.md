@@ -272,6 +272,42 @@ p {
 
 
 
+### Variáveis e herança
+
+```css
+/* define váriaveis globais */
+:root {
+  --primary-color: #0a1128;
+}
+
+body {
+  color: var(--primary-color);
+}
+```
+- `inherit` força a herança de um valor do pai.
+
+  ```css
+  p {
+    color: inherit;
+  }
+  ```
+
+
+### Contadores no CSS
+
+- Permitem numerar elementos automaticamente:
+
+```css
+body {
+  counter-reset: secao;
+}
+
+h2::before {
+  counter-increment: secao;
+  content: "Seção " counter(secao) ": ";
+}
+```
+
 
 
 
@@ -308,8 +344,7 @@ p {
 ## Pesquisar mais
 
 
-- box model, box-sizing: border-box;
-- display: block;
+
 - a tag style pode ficar em qualquer lugar no html??
 -```<link rel="stylesheet" href="style.css">```
 - seleção de descendente
@@ -354,37 +389,13 @@ p {
 
 
 - herança no css
-- unidade de medidas no css: %, auto, max, min, em
-- max-widht, min-width, height, view port
+
 - propriedade  (inline, block, flex, grid), clear: both
 
-- cores no css: hexadecimal vernelho(FF) verde(FF) azul(FF), #abc123; - ABCDEF123456789
-- pq o vermelho é #ff0000 e não #990000
-- rgb e rgba
-- hsl e hsla
-- unidades de medida: unidades absolutas, unidades relativas, em (elemento pai multiplicação), rem (elemento root), vw, vh
-- https://www.w3schools.com/cssref/css_units.php
-- links de ancoras
-- propriedades pra trabalhar com textos:
-```css
-p{
-    /* color: red;
-    background-color: yellow;
-    font-style: italic;
-    font-weight: bold;
-    direction: rtl;
-    letter-spacing: 1px;
-    text-decoration: overline;
-    word-spacing: 5px;
-    text-indent: 50px;
-    text-shadow: 2px 2px red;
-    line-height: 30px; */
-    text-align: left;
-    font-size: 20px;  
-}
-```
 
-- position: absolute, fixed, sticky..., z-index
+
+- links de ancoras
+
 - media queries com exemplos
 - https://developer.mozilla.org/pt-BR/docs/Web/CSS/Guides/Media_queries/Using
 - flexbox (eixo principal, eixo perpendicular, align content, align items, justify content, cross start, cross axis, cross end, flex flow, flex grow)
@@ -460,47 +471,3 @@ Exemplo:
 
 📚 [Guia Grid — CSS-Tricks](https://css-tricks.com/snippets/css/complete-guide-grid/)
 
----
-
-## ⚙️ Variáveis e herança
-
-```css
-:root {
-  --primary-color: #0a1128;
-}
-
-body {
-  color: var(--primary-color);
-}
-```
-
-* `:root` define variáveis globais.
-* `inherit` força a herança de um valor do pai.
-
-  ```css
-  p {
-    color: inherit;
-  }
-  ```
-
----
-
-## 🔢 Contadores no CSS
-
-Permitem numerar elementos automaticamente:
-
-```css
-body {
-  counter-reset: secao;
-}
-
-h2::before {
-  counter-increment: secao;
-  content: "Seção " counter(secao) ": ";
-}
-```
-
----
-
-Quer que eu te monte uma **versão resumida em tabela (tipo “guia de bolso CSS”)** com seletores, pseudo-classes, propriedades e unidades mais usadas?
-Dá pra deixar visual e ótimo pra revisar rápido.
