@@ -29,10 +29,10 @@
 </html>
 ```
 
+### IDs e Classes
 
-
-- id são únicos, não pode ter mais de um id iguais na página
-- class também são identificadores, mas diferente do id, elas podem se repetir, e é possivel ter mais de uma classe dentro de uma tag
+- Id são únicos, não devem se repetir na página
+- Classes também são identificadores, mas diferente do id, podem se repetir e uma tag pode ter várias classes
 ```html
     <h1 id="cabecalho-um" class="fundo-vermelho outra-classe">
         texto texto
@@ -41,6 +41,19 @@
         texto texto texto
     </h1>
 ```
+
+
+### Tipos de tags
+
+- Existem tags que são blocos, inline e containers
+- Blocos (Block-level): ocupam toda a largura disponível e começam em nova linha - ```<div>```, ```<p>```, ```<section>```
+- Inline: não quebram linha e ocupam apenas o espaço do conteúdo - ```<span>```, ```<a>```, ```<strong>```
+- Containers: elementos usados para agrupar e estruturar elementos em uma página: 
+    - ```<div>``` -> bloco genérico (sem significado semântico)
+    - ```<span>``` -> container inline genérico
+
+
+
 - html semântico: usar as tags ```<h>```, por exemplo, ajuda quando um leitor para deficientes visuais lê o site
 - existem tags que são blocos. E existem tags que não podem ir dentro de outras
 - toda tag html pode receber um atributo style, que recebe um css dentro
@@ -70,33 +83,10 @@
 
 
 ## pesquisar mais
-- estilo de tag  e block elementos -> ```<span></span>```
+- containers e tags bloco
 
-##  Identificadores e Classes
 
-* **id** é único — não deve se repetir na página.
-* **class** pode se repetir e uma tag pode ter várias classes:
 
-  ```html
-  <h1 id="cabecalho-um" class="fundo-vermelho outra-classe">Texto</h1>
-  <h1 id="cabecalho-dois" class="fundo-vermelho">Outro texto</h1>
-  ```
-
----
-
-##  Tipos de tags
-
-| Tipo            | Exemplo                     | Características                                          |
-| --------------- | --------------------------- | -------------------------------------------------------- |
-| **Block-level** | `<div>`, `<p>`, `<section>` | Ocupam toda a largura disponível e começam em nova linha |
-| **Inline**      | `<span>`, `<a>`, `<strong>` | Não quebram linha; ocupam apenas o espaço do conteúdo    |
-
-### Containers
-
-* `<div>` → bloco genérico (sem significado semântico)
-* `<span>` → container **inline** genérico
-
----
 
 ##  HTML semântico
 
