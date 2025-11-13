@@ -28,7 +28,9 @@
 </body>
 </html>
 ```
-- estilo de tag inline -> ```<span></span>```
+
+
+
 - id são únicos, não pode ter mais de um id iguais na página
 - class também são identificadores, mas diferente do id, elas podem se repetir, e é possivel ter mais de uma classe dentro de uma tag
 ```html
@@ -67,7 +69,8 @@
 
 
 
-
+## pesquisar mais
+- estilo de tag  e block elementos -> ```<span></span>```
 
 ##  Identificadores e Classes
 
