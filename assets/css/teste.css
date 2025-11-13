@@ -1,0 +1,29 @@
+* {
+    /* margin: 0;
+    padding: 0;
+    box-sizing: border-box; */
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    align-items: center;
+    width: 200px;
+    height: 100vh;
+    background-color: #ff7a18;
+    gap: 10px;
+}
+
+.filho{    
+    width: 25%;
+    height: 25%;
+    background-color: #9b51e0;
+    
+}
