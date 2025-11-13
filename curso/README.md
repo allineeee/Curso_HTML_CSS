@@ -82,7 +82,7 @@
 | Tipo             | Tag    | Descrição                                      |
 | ---------------- | ------ | ---------------------------------------------- |
 | Não ordenada | `<ul>` | Itens com marcadores (bolinha)                          |
-| Ordenada*    | `<ol>` | Itens numerados (`type="A"`, `type="I"`, etc)  |
+| Ordenada    | `<ol>` | Itens numerados (`type="A"`, `type="I"`, etc)  |
 | Definição    | `<dl>` | Lista de termos e definições (`<dt>` e `<dd>`) |
 
 - Exemplo de lista ordenada, que começa em 'C':
@@ -137,7 +137,7 @@
   <p style="color: red; font-size: 20px;">Texto colorido</p>
 ```
 
-### Containers x Tags de Bloco
+## Containers x Tags de Bloco
 
 - Containers são tags genéricas usadas apenas para agrupar conteúdo — elas servem como “caixas” que não têm significado semântico próprio.
 - Exemplos: 
@@ -145,6 +145,14 @@
     - `<span>` -> container inline
 - Essas tags apenas organizam visualmente o conteúdo para aplicar CSS/JS
 - tags de bloco -> estruturalmente ocupam um bloco na página
+- `<div>` -> é uma tag de bloco, agrupa várias tags dentro de uma seção visual
+```html
+<div class="container"></div>
+```
+- `<span>` -> é uma tag inline, agrupa partes de um texto dentro de uma linha
+```html
+<p>O <span class="vermelho">texto</span> está colorido</p>
+```
 
 
 
@@ -157,33 +165,17 @@
 
 
 
-
-## Containers: `<span>` x `<div>`
-
-| Tag      | Tipo       | Descrição                                                                           | Exemplo                                               |
-| -------- | ---------- | ----------------------------------------------------------------------------------- | ----------------------------------------------------- |
-| `<div>`  | **Bloco**  | Agrupa conteúdo em nível de bloco (ex: várias tags dentro de uma seção visual)      | `<div class="container"></div>`                       |
-| `<span>` | **Inline** | Agrupa partes de texto dentro de uma linha, para aplicar estilo sem quebrar o fluxo | `O <span class="vermelho">texto</span> está colorido` |
-
- Resumo rápido:
-
-* Use `<div>` para **agrupamentos grandes** (layout, seções).
-* Use `<span>` para **pequenos trechos de texto** (estilização pontual).
-
----
 
 ##  Tags `nav`, `section`, `article`, `aside`
 
-Essas são **tags semânticas estruturais**, introduzidas no HTML5.
+- tags semânticas estruturais, do HTML5.
 
-| Tag         | Significado                          | Uso típico                        |
+| Tag         | Significado                          | Quando usar                        |
 | ----------- | ------------------------------------ | --------------------------------- |
 | `<nav>`     | Área de navegação                    | Menus, links principais           |
 | `<section>` | Seção de conteúdo relacionada        | Blocos temáticos, capítulos       |
 | `<article>` | Conteúdo independente e reutilizável | Post de blog, notícia, comentário |
 | `<aside>`   | Conteúdo secundário ou lateral       | Barra lateral, anúncios, notas    |
-
-### Exemplo:
 
 ```html
 <main>
@@ -197,51 +189,3 @@ Essas são **tags semânticas estruturais**, introduzidas no HTML5.
   </aside>
 </main>
 ```
-
----
-
-
-
-
-
-
-
-
- 
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## pesquisar mais
-- containers x tags de bloco
-
-- existem tags que são blocos. E existem tags que não podem ir dentro de outras???
-
-
-- estado lógico x estado fisico
-
-- tags small, s, u, sup, sub, q(citação)
-- tags que não pode, vir dentro da tag p. porque não são tags inline: blockquote...???
-- containers: span x div??
-- tags nav, section, article, aside
-- o que são elemetos que tem semantica???section??
-
-
-
-
