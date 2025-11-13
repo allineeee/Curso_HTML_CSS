@@ -98,7 +98,37 @@ div {
 
 - `odd` = ímpar | `even` = par | `3n + 2` = padrão matemático
 
+```css
+input:checked + p{
+    color: red;
+}
 
+input:not(:checked) + p{
+    background: yellowgreen;
+}
+
+p:not(.meio){
+    color: blue;
+}
+```
+
+```css
+ul li:nth-child(odd) {
+    background-color: rebeccapurple;
+}
+
+ul li:nth-child(even) {
+    background-color: darkturquoise;
+}
+
+ul li:nth-child(3n) {
+    background-color: deeppink;
+}
+
+ul li:nth-child(3n + 5) {
+    background-color: yellow;
+}
+```
 
 ### Pseudo-elementos
 
@@ -160,7 +190,7 @@ p::selection {
 
 ## Pesquisar mais
 
-- quais são os seletores do css???
+
 - box model, box-sizing: border-box;
 - display: block;
 - a tag style pode ficar em qualquer lugar no html??
@@ -198,61 +228,11 @@ p::selection {
 ```
 
 
-- seletores de pseudoclasses: hover...
+
 - links que foram visitados e links que não foram visitados (a:link, a:visited)
-- li:last-child, input:checked +p,
-- seletor not:
-```css
-input:checked + p{
-    color: red;
-}
 
-input:not(:checked) + p{
-    background: yellowgreen;
-}
 
-p:not(.meio){
-    color: blue;
-}
-```
 
-```css
-ul li:nth-child(odd) {
-    background-color: rebeccapurple;
-}
-
-ul li:nth-child(even) {
-    background-color: darkturquoise;
-}
-
-ul li:nth-child(3n) {
-    background-color: deeppink;
-}
-
-ul li:nth-child(3n + 5) {
-    background-color: yellow;
-}
-```
-- pseudo elemento:
-```css
-ul li::after{
-    content: " - ";
-}
-
-p::first-letter{
-    font-size: 150px;
-    display: block;
-    float: left;
-    margin: 0 20px 20px 0;
-    color: red;
-}
-
-p::selection{
-    background-color: black;
-    color: #fff;
-}
-
-```
 
 - especificidade no css (como faz a conta 1, 1, 0) e !important
 - https://specificity.keegan.st/
