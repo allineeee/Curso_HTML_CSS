@@ -59,6 +59,32 @@
 - ```<em>``` tem valor semântico (ênfase), enquanto ```<i>``` apenas aplica itálico.
 - principais tags semânticas: `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<aside>`, `<footer>`  
 
+### Links
+
+```html
+<a href="https://site.com" target="_blank">Abrir em nova aba</a>
+```
+- `href`: destino do link
+- `target="_blank"`: abre o link em nova aba (mas o target também pode ter outras configurações)
+- Também pode ter `title` (texto ao passar o mouse)
+
+###  Listas
+
+| Tipo             | Tag    | Descrição                                      |
+| ---------------- | ------ | ---------------------------------------------- |
+| **Não ordenada** | `<ul>` | Itens com marcadores                           |
+| **Ordenada**     | `<ol>` | Itens numerados (`type="A"`, `type="I"`, etc)  |
+| **Definição**    | `<dl>` | Lista de termos e definições (`<dt>` e `<dd>`) |
+
+Exemplo:
+
+```html
+<ol type="A" start="3">
+  <li>Item</li>
+</ol>
+```
+
+### aaa
 
 - existem tags que são blocos. E existem tags que não podem ir dentro de outras
 - toda tag html pode receber um atributo style, que recebe um css dentro
@@ -66,7 +92,7 @@
 
 
 - estado lógico x estado fisico
-- tag de link ```<a href="" target="_blank">coloca link</a>```. O target define configurações para seu link, o '_blank', por exemplo, abre o link em uma nova aba.
+
 - tags small, s, u, sup, sub, q(citação)
 - tags que não pode, vir dentro da tag p. porque não são tags inline: blockquote...
 - containers: span x div
@@ -96,33 +122,11 @@
  
  
 
-##  Links
 
-```html
-<a href="https://site.com" target="_blank">Abrir em nova aba</a>
-```
-
-* `href`: destino do link
-* `target="_blank"`: abre o link em nova aba
-* Também pode ter `title` (texto ao passar o mouse)
 
 ---
 
-##  Listas
 
-| Tipo             | Tag    | Descrição                                      |
-| ---------------- | ------ | ---------------------------------------------- |
-| **Não ordenada** | `<ul>` | Itens com marcadores                           |
-| **Ordenada**     | `<ol>` | Itens numerados (`type="A"`, `type="I"`, etc)  |
-| **Definição**    | `<dl>` | Lista de termos e definições (`<dt>` e `<dd>`) |
-
-Exemplo:
-
-```html
-<ol type="A" start="3">
-  <li>Item</li>
-</ol>
-```
 
 ---
 
