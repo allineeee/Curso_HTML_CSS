@@ -389,14 +389,9 @@ h2::before {
 
 
 
+### OBS
 
-
-
-### AAAAAAA
-
-
-
-- no caso abaixo, a margin bottom do primeiro elemento, não é somada com a margi-top do segundo elemento, é usado a maior margin. Como nesse caso ambas as margins tem o mesmo tamanho, fica uma diferença de 20px entre os dois elementos
+- no caso abaixo, a margin bottom do primeiro elemento, não é somada com a margin-top do segundo elemento, é usado a maior margin. Como nesse caso ambas as margins tem o mesmo tamanho, fica uma diferença de 20px entre os dois elementos
 ```css
   .section-one {
             width: 200px;
